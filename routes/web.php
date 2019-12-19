@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('front.user_home');
 });
 
 Auth::routes();
@@ -24,3 +24,6 @@ Route::post('faqs/create','FaqController@create');
 Route::get('faqForm',function(){
     return view('createFaq');
 });
+
+// Route Contact
+Route::post('contact','ContactController@store')->name('create_contact');

@@ -1,0 +1,2 @@
+ "Probleme" => Expected response code 250 but got code “530”, with message "530 5.7.1 Authentication required
+ "Solution" => php artisan config:cache

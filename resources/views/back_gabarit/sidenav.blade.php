@@ -6,7 +6,7 @@
             <ul class="nav am-sideleft-menu">
                     <li class="nav-item">
                         <a href="" class="nav-link with-sub">
-                            <i class="fa fa-map-marker  tx-24"></i>
+                            <i class="fa fa-address-book tx-24" aria-hidden="true"></i>
                             <span>Contact</span>
                         </a>
                         <ul class="nav-sub" style="display: none;">
@@ -16,7 +16,7 @@
 
                         <li class="nav-item">
                             <a href="" class="nav-link with-sub">
-                                <i class="fa fa-picture-o " aria-hidden="true"></i>
+                                <i class="fa fa-picture-o tx-24" aria-hidden="true"></i>
                                 <span>Gallery</span>
                             </a>
                             <ul class="nav-sub" style="display: none;">
