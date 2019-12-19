@@ -39,7 +39,7 @@
             <div class="dropdown-menu wd-200">
                 <ul class="list-unstyled user-profile-nav">
 
-                        <li><a href="{{url('/myprofile/'.Auth()->user()->user_id)}}"><i class="icon ion-ios-person-outline"></i>{{__('Profil')}}</a></li>
+                        <li><a href="{{url('/myprofile/')}}"><i class="icon ion-ios-person-outline"></i>{{__('Profil')}}</a></li>
                     <li><a href="{{url('/user/preference')}}"><i class="icon ion-ios-gear-outline"></i> {{__('Préférences')}}</a></li>
                     <li>
 
