@@ -8,7 +8,7 @@
     <div class="am-header-right">
         <div class="dropdown dropdown-notification">
             <a href="" class="nav-link pd-x-7 pos-relative" data-toggle="dropdown">
-                <span class="tx-24">{{$alertesNonLus}}/{{$alertesTotal}}</span>
+                <span class="tx-24">5/10</span>
                 <i class="icon ion-ios-bell-outline tx-24"></i>
                 <!-- start: if statement -->
                 <span class="square-8 bg-danger pos-absolute t-15 r-0 rounded-circle"></span>
@@ -20,19 +20,19 @@
 
                 <div class="media-list">
 
-                    @foreach ( $notifications->take(5) as $notification )
+                    
                     <a href="" class="media-list-link read">
                             <div class="media pd-x-20 pd-y-15">
                              <img src="" class="notification-logo wd-40 rounded-circle" alt="">
                                 <div class="media-body">
-                                <p class="tx-13 mg-b-0">{{$notification->system_content}}</p>
-                                    <span class="tx-12">{{$notification->alert_date}} </span>
-                                    <span style="float: right" class="tx-12">{{$notification->alert_value}} </span>
+                                <p class="tx-13 mg-b-0"></p>
+                                    <span class="tx-12"> </span>
+                                    <span style="float: right" class="tx-12"></span>
                                 </div>
                             </div><!-- media -->
                         </a>
 
-                    @endforeach
+                    
 
                     <div class="media-list-footer">
                         <a href="{{url('/notifications')}}" class="tx-12">{{__('Liste des Notifications')}}</a>
@@ -51,7 +51,7 @@
             <div class="dropdown-menu wd-200">
                 <ul class="list-unstyled user-profile-nav">
 
-                        <li><a href="{{url('/myprofile/'.Auth()->user()->user_id)}}"><i class="icon ion-ios-person-outline"></i>{{__('Profil')}}</a></li>
+                        <li><a href="{{url('/myprofile/')}}"><i class="icon ion-ios-person-outline"></i>{{__('Profil')}}</a></li>
                     <li><a href="{{url('/user/preference')}}"><i class="icon ion-ios-gear-outline"></i> {{__('Préférences')}}</a></li>
                     <li>
 

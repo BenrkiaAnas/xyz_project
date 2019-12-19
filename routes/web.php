@@ -18,3 +18,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+//les routes de faqs 
+Route::get('faqs','FaqController@getFaqs');
+Route::post('faqs/create','FaqController@create');
+Route::get('faqForm',function(){
+    return view('createFaq');
+});
