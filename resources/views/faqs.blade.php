@@ -27,13 +27,13 @@
                               @endif
                             </td>
                             <td>
-                                <a href="{{url('/faqs/edit/'.$faq->id)}}" class="btn btn-primary btn-icon rounded-circle ">
+                                <a href="{{url('editFaq/'.$faq->id)}}" class="btn btn-primary btn-icon rounded-circle ">
                                     <div><i class="fa fa-pencil"></i></div>
                                 </a>
-                                <a href="{{url('/faqs/show/'.$faq->id)}}" class="btn btn-primary btn-icon rounded-circle ">
+                               {{--<a href="{{url('/faqs/show/'.$faq->id)}}" class="btn btn-primary btn-icon rounded-circle ">
                                     <div><i class="fa fa-folder-open" aria-hidden="true"></i>
                                     </div>
-                                </a>
+                                </a>--}}
                             </td>
                           </tr>
                     @endforeach
@@ -51,18 +51,18 @@
         }
         });
     
-    function activeDesactive(alert_id,status)
+    function activeDesactive(id,status)
         {   
          $.ajax({
-            url: '/alerts/activeDesactive',
-            data:{ "_token": "{{ csrf_token() }}",alert_id:alert_id,status:status},
+            url: '/faqs/activeDesactive',
+            data:{ "_token": "{{ csrf_token() }}",id:id,status:status},
             type: "GET",
             success: function(data){
                 if(status == 0)
                 {
-                    $("#td_"+alert_id).html("<i class='fa fa-power-off x2 mouseHover' style='color: red;font-size:24px' onclick='activeDesactive("+alert_id+",1)'></i>");
+                    $("#td_"+id).html("<i class='fa fa-power-off x2 mouseHover' style='color: red;font-size:24px' onclick='activeDesactive("+id+",1)'></i>");
                 }else{
-                    $("#td_"+alert_id).html("<i class='fa fa-power-off x2 mouseHover' style='color: green;font-size:24px' onclick='activeDesactive("+alert_id+",0)'></i>");
+                    $("#td_"+id).html("<i class='fa fa-power-off x2 mouseHover' style='color: green;font-size:24px' onclick='activeDesactive("+id+",0)'></i>");
                 }
                 console.log(data)
             }, 

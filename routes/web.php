@@ -24,3 +24,9 @@ Route::post('faqs/create','FaqController@create');
 Route::get('faqForm',function(){
     return view('createFaq');
 });
+//la route d'edition de faq
+Route::get('editFaq/{id}','FaqController@edit');
+//la route d'update' de faq
+Route::post('faqs/update/{id}','FaqController@update');
+//la route d'activatio/desactive une FAQ
+Route::get('/faqs/activeDesactive','FaqController@activeDesactive');

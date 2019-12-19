@@ -32,7 +32,43 @@ public function create(Request $request)
         'question' => $request->question,
         'reponse' => $request->reponse,
     ]);
-    return  redirect('/faqs');
+    if( $request->action === "refresh")
+    return  redirect('/faqForm');
+    elseif($request->action === "list")
+    return redirect('faqs');
+}
+//la fonction d'edition de faq
+
+public function edit(Request $request,$id)
+{
+    $faq=Faq::findOrFail($id);
+    return view('editFaq',['faq'=>$faq]);
+
+}
+public function update(Request $request,$id)
+{
+    $validatedData = $request->validate([
+        'question' => 'required',
+        'reponse' => 'required',
+    ]);
+    $faq=Faq::findOrFail($id);
+    $faq->question=$request->question;
+    $faq->reponse=$request->reponse;
+    $faq->save();
+    return redirect('faqs');
+}
+
+/*cette fonction permet de retourner la liste des users associeé a une alerte si deja existé */
+public function activeDesactive(Request $request)
+{
+   $faq=Faq::find($request->id);
+   $faq->status=$request->status;
+   $faq->update();
+   if($faq->update()){
+    return Response()->json('success');
+   }else{
+    return Response()->json('error');
+   }
 }
 
 }
