@@ -2,13 +2,13 @@
     <div class="am-header-left">
         <a id="naviconLeft" href="" class="am-navicon d-none d-lg-flex" ><i class="icon ion-navicon-round"></i></a>
         <a id="naviconLeftMobile" href="" class="am-navicon d-lg-none"><i class="icon ion-navicon-round"></i></a>
-        <a href="" class="am-logo"><img src="{{asset('images/thermodity.png')}}" class="img-fluid" title="Thermodity" style="height: 50px;padding-top: 10px;"/></a>
+        <!--<a href="" class="am-logo"><img src="{{asset('images/thermodity.png')}}" class="img-fluid" title="Thermodity" style="height: 50px;padding-top: 10px;"/></a>-->
     </div><!-- am-header-left -->
 
     <div class="am-header-right">
         <div class="dropdown dropdown-notification">
             <a href="" class="nav-link pd-x-7 pos-relative" data-toggle="dropdown">
-                <span class="tx-24">5/10</span>
+                <span class="tx-24"></span>
                 <i class="icon ion-ios-bell-outline tx-24"></i>
                 <!-- start: if statement -->
                 <span class="square-8 bg-danger pos-absolute t-15 r-0 rounded-circle"></span>
@@ -20,19 +20,7 @@
 
                 <div class="media-list">
 
-                    
-                    <a href="" class="media-list-link read">
-                            <div class="media pd-x-20 pd-y-15">
-                             <img src="" class="notification-logo wd-40 rounded-circle" alt="">
-                                <div class="media-body">
-                                <p class="tx-13 mg-b-0"></p>
-                                    <span class="tx-12"> </span>
-                                    <span style="float: right" class="tx-12"></span>
-                                </div>
-                            </div><!-- media -->
-                        </a>
 
-                    
 
                     <div class="media-list-footer">
                         <a href="{{url('/notifications')}}" class="tx-12">{{__('Liste des Notifications')}}</a>
