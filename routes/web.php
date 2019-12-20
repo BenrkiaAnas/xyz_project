@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('front.user_home');
 });
 
-Auth::routes();
+Auth::routes(['/logout',true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 //les routes de faqs 
@@ -27,3 +27,7 @@ Route::get('faqForm',function(){
 
 // Route Contact
 Route::post('contact','ContactController@store')->name('create_contact');
+Route::get('parameter','ParameterController@view');
+Route::post('paramter/editPassword','ParameterController@editMyPassword');
+Route::get('/logOut','ParameterController@logout');
+

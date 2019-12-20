@@ -36,13 +36,13 @@
                             </ul>
                         </li>
 
-
                         <li class="nav-item">
-                            <a href="" class="nav-link">
+                            <a href="{{url("/parameter")}}" class="nav-link">
                                 <i class="fa fa-cog  tx-24" aria-hidden="true"></i>
                                 <span>Parametre</span>
                             </a>
                         </li>
+
             </ul>
         </div><!-- #mainMenu -->
         <!-- -------------------- End etrs ------------------------------------------------>
