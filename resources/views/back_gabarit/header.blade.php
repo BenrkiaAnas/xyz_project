@@ -43,7 +43,7 @@
                     <li><a href="{{url('/user/preference')}}"><i class="icon ion-ios-gear-outline"></i> {{__('Préférences')}}</a></li>
                     <li>
 
-                        <a href="{{ Auth::logout() }}"> {{__('Déconnexion')}} </a>
+                        <a href="{{ url('/logOut') }}"> {{__('Déconnexion')}} </a>
                     </li>
 
 

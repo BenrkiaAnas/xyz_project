@@ -51,12 +51,12 @@
             <h5 class="tx-gray-800 mg-b-25">Connectez-vous à votre compte</h5>
 
             <div class="form-group">
-              <label for="username" class="form-control-label">{{ __('Username') }}</label>
-              <input  class="form-control" id="username" type="text" class="form-control{{ $errors->has('username') ? ' is-invalid' : '' }}" name="username" value="{{ old('username') }}" required autofocus placeholder="Enter your username">
+              <label for="email" class="form-control-label">{{ __('email') }}</label>
+              <input  class="form-control" id="email" type="text" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus placeholder="Enter your email">
 
-               @if ($errors->has('username'))
+               @if ($errors->has('email'))
                         <span class="invalid-feedback" role="alert">
-                              <strong>{{ $errors->first('username') }}</strong>
+                              <strong>{{ $errors->first('email') }}</strong>
                          </span>
                 @endif
             </div><!-- form-group -->

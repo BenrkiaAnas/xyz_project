@@ -11,6 +11,32 @@ use Illuminate\Support\Facades\Mail;
 class ContactController extends Controller
 {
     //
+    // Prevent Other To Access These Routes
+    public function __construct()
+    {
+        $this->middleware('auth')->except(['store']);
+    }
+
+
+    // Function return view contact admin
+    public function view()
+    {
+        return view('back.contact');
+    }
+
+    // Function Register Email Contact
+    public function store_email(Request $request)
+    {
+        $this->validate($request,[
+            'email' => 'required|email',
+        ]);
+        $sql = "INSERT INTO `contact__admins` (`email`) VALUES ('$request->email')";
+        $contact_email = DB::insert($sql);
+        if($contact_email)
+        {
+            return redirect()->route('add_contact');
+        }
+    }
 
     // Function Create Message Contact
     public function store(Request $request)
@@ -32,10 +58,13 @@ class ContactController extends Controller
                 $email = $request->email;
                 $full_name = $request->first_name.' '.$request->last_name;
                 $emails_sends_to = Contact_Admin::all();
+                $message = $request->message;
+                $phone = $request->phone;
                 $data = array(
                   'full_name' => $full_name,
                   'email' => $email,
-                  'body' => "Test ALAH",
+                  'body' => $message,
+                    'phone' => $phone
                 );
                 foreach ($emails_sends_to as $emails)
                 {
