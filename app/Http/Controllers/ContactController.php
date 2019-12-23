@@ -75,7 +75,7 @@ class ContactController extends Controller
                     });
                 }
 
-                return redirect('/');
+                return redirect()->back();
             }
             else{
                 return dd("error");

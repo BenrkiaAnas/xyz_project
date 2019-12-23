@@ -11,8 +11,12 @@
 |
 */
 
+// Route Pages
 Route::get('/', function () {
     return view('front.user_home');
+})->name('home');
+Route::get('contact-nous', function () {
+    return view('front.contact_page');
 });
 
 Auth::routes();

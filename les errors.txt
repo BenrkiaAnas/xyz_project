@@ -1,2 +1,4 @@
  "Probleme" => Expected response code 250 but got code “530”, with message "530 5.7.1 Authentication required
  "Solution" => php artisan config:cache
+ "Probleme" => If You reset password , the password link redirect you to localhost/..... instead you want localhost:8000
+ "Solution" => change .env APP_URL => http://localhost:8000 and execute commande php artisan config:cache	

@@ -40,7 +40,6 @@
               
 
               <hr>
-              <p>
                 <p>SECURITE</p>
 <!-- Vous n'avez pas de compte? <br> <a href="{{url('/register')}}">s'inscrire maintenant?</a></p> -->
             </div>
@@ -70,6 +69,13 @@
                     </span>
                @endif
             </div><!-- form-group -->
+                <div class="form-group mg-b-20">
+                    @if (Route::has('password.request'))
+                        <a href="{{ route('password.request') }}">
+                            Mot De Passe Oublié
+                        </a>
+                    @endif
+                </div>
 
             
               <button type="submit" class="btn btn-block">
