@@ -39,3 +39,9 @@ Route::post('contact','ContactController@store')->name('create_contact');
 // Route Contact Email
 Route::get('contact','ContactController@view')->name('add_contact');
 Route::post('contactEmail','ContactController@store_email');
+//la route d'edition de faq
+Route::get('editFaq/{id}','FaqController@edit');
+//la route d'update' de faq
+Route::post('faqs/update/{id}','FaqController@update');
+//la route d'activatio/desactive une FAQ
+Route::get('/faqs/activeDesactive','FaqController@activeDesactive');
