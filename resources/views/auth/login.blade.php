@@ -17,7 +17,7 @@
     <meta name="author" content="ThemePixels">
 
 
-    <title>NJT | THERMODITY</title>
+    <title>NJT | Alsa</title>
 
     <!-- vendor css -->
     <link href="{{asset('lib/font-awesome/css/font-awesome.css')}}" rel="stylesheet">
@@ -50,7 +50,7 @@
             <h5 class="tx-gray-800 mg-b-25">Connectez-vous à votre compte</h5>
 
             <div class="form-group">
-              <label for="email" class="form-control-label">{{ __('email') }}</label>
+              <label for="email" class="form-control-label">Email</label>
               <input  class="form-control" id="email" type="text" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus placeholder="Enter your email">
 
                @if ($errors->has('email'))

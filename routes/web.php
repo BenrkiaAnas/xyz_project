@@ -18,6 +18,9 @@ Route::get('/', function () {
 Route::get('contact-nous', function () {
     return view('front.contact_page');
 });
+Route::get('a-propos-de-nous', function () {
+    return view('front.center_page');
+});
 
 Auth::routes();
 

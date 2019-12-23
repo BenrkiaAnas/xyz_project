@@ -29,7 +29,7 @@
     <meta name="author" content="ThemePixels">
 
 
-    <title>NJT | THERMODITY</title>
+    <title>NJT | Alsa</title>
 
     <!-- vendor css -->
     <link href="{{asset('lib/font-awesome/css/font-awesome.css')}}" rel="stylesheet">

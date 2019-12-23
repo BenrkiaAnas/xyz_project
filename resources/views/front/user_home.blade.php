@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{asset('css_front/plugins.css')}}">
     <link rel="stylesheet" href="{{asset('css_front/style.css')}}">
     <link rel="stylesheet" href="{{asset('css_front/style1.css')}}">
+    <link rel="stylesheet" href="{{asset('lib/font-awesome/css/font-awesome.css')}}"/>
 
 
 </head>
@@ -63,7 +64,7 @@
                         <a class="nav-link " href="{{url('/')}}">Acceuil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="about.html">Le Centre</a>
+                        <a class="nav-link " href="{{url('a-propos-de-nous')}}">Le Centre</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="gallery.html">Galerie</a>
@@ -95,7 +96,7 @@
                         <a class="nav-link " href="{{url('/')}}">Acceuil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="about.html">Le Centre</a>
+                        <a class="nav-link " href="{{url('a-propos-de-nous')}}">Le Centre</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="gallery.html">Galerie</a>

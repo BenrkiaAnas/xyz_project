@@ -55,12 +55,12 @@
                             </div>
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-group bottom35">
-                                    <input class="form-control" type="tel" placeholder="Tél:" id="phone" name="phone">
+                                    <input class="form-control" type="tel" placeholder="Tél:" id="phone" name="phone" required>
                                 </div>
                             </div>
                             <div class="col-md-12 col-sm-12">
                                 <div class="form-group bottom35">
-                                    <textarea class="form-control" placeholder="Message" id="message" name="message"></textarea>
+                                    <textarea class="form-control" placeholder="Message" id="message" name="message" required></textarea>
                                 </div>
                             </div>
                             <div class="col-sm-12">
