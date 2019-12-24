@@ -63,7 +63,7 @@ $("#submit_btn").click(function() {
 
     }
     else {
-           output = '<div class="alert-danger" style="padding:10px; margin-bottom:25px;">Please provide the missing fields.</div>';
+           output = '<div class="alert-danger" style="padding:10px; margin-bottom:25px;">Veuillez fournir les champs manquants.</div>';
            $("#result").hide().html(output).slideDown();
     }
 
