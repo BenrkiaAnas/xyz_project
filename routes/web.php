@@ -30,3 +30,9 @@ Route::get('editFaq/{id}','FaqController@edit');
 Route::post('faqs/update/{id}','FaqController@update');
 //la route d'activatio/desactive une FAQ
 Route::get('/faqs/activeDesactive','FaqController@activeDesactive');
+Route::get('/galery',function(){
+    return view('galery');
+});
+Route::post('tester','GaleryController@tester');
+Route::get('image-crop', 'GaleryController@imageCrop');
+Route::post('image-crop', 'GaleryController@imageCropPost');

@@ -35,6 +35,7 @@
     <title>ALSA</title>
 
     <!-- vendor css -->
+    <link rel="stylesheet" href="http://demo.itsolutionstuff.com/plugin/croppie.css">
     <link href="{{ asset('lib/font-awesome/css/font-awesome.css') }}" rel="stylesheet">
     <link href="{{ asset('lib/Ionicons/css/ionicons.css') }}" rel="stylesheet">
     <link href="{{ asset('lib/perfect-scrollbar/css/perfect-scrollbar.css') }}" rel="stylesheet">
@@ -76,8 +77,138 @@
     <script  src="{{asset('lib/datatables/jquery.dataTables.js')}}"></script>
     <script  src="{{asset('lib/datatables-responsive/dataTables.responsive.js')}}"></script>
 
-    <script  src="{{asset('js/amanda.js')}}"></script>
-    <script >
+    <script  src="{{asset('js_back/amanda.js')}}"></script>
+    <script src="http://demo.itsolutionstuff.com/plugin/croppie.js"></script>
+    <script type="text/javascript">
+        $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+        });
+        
+        function uploadDemo(id,width,height)
+        {
+            $uploadCrop = $('#upload-demo_'+id).croppie({
+            enableExif: false,
+            viewport: {
+                width: width ,
+                height: height,
+                type: 'square'
+            },
+            boundary: {
+                width: 300,
+                height: 300
+            }
+        });
+        console.log(width);
+        }
+        //e for event 
+        //i to increment the id
+        //width height to crop
+        function onChangeImage(e,i,id,width,height)
+        {
+            var reader = new FileReader();
+        
+            alert(e)
+            console.log(e)
+            reader.onload = function (e) {
+                $uploadCrop.croppie('bind', {
+                    url: e.target.result
+                }).then(function(){
+                    console.log('jQuery bind complete');
+                });
+            }
+            reader.readAsDataURL(e.target.files[0]);
+            uploadDemo(i,width,height);
+            document.getElementById(id).style.display='block';
+            
+        }
+        
+        function uploadResult()
+        {
+          alert(1);
+          var table=[];
+          $('img.image-cropped').each(function() {
+               table=$(this).attr('src');
+                 });
+           $.ajax({
+              url:'/image-crop',
+              type:'POST',
+              data:{images:table},
+              success:function(data){
+              },
+              error:function(error){
+                console.log(error);
+              }
+            })
+        }
+        
+        
+        
+        $('.upload-result_0').on('click', function (ev) {
+            $uploadCrop.croppie('result', {
+                type: 'canvas',
+                size: 'viewport'
+            }).then(function (resp) {
+                html = '<img class="image-cropped" src="' + resp + '" name="tab[]"/>';
+                $("#upload-demo-i_"+0).html(html);
+            });
+        });
+        $('.upload-result_1').on('click', function (ev) {
+            $uploadCrop.croppie('result', {
+                type: 'canvas',
+                size: 'viewport'
+            }).then(function (resp) {
+                html = '<img class="image-cropped" src="' + resp + '" name="tab[]"/>';
+                $("#upload-demo-i_"+1).html(html);
+            });
+        });
+        $('.upload-result_2').on('click', function (ev) {
+            $uploadCrop.croppie('result', {
+                type: 'canvas',
+                size: 'viewport'
+            }).then(function (resp) {
+                html = '<img class="image-cropped" src="' + resp + '" name="tab[]" />';
+                $("#upload-demo-i_"+2).html(html);
+            });
+        });
+        $('.upload-result_3').on('click', function (ev) {
+            $uploadCrop.croppie('result', {
+                type: 'canvas',
+                size: 'viewport'
+            }).then(function (resp) {
+                html = '<img class="image-cropped" src="' + resp + '" name="tab[]" />';
+                $("#upload-demo-i_"+3).html(html);
+            });
+        });
+        $('.upload-result_4').on('click', function (ev) {
+            $uploadCrop.croppie('result', {
+                type: 'canvas',
+                size: 'viewport'
+            }).then(function (resp) {
+                html = '<img class="image-cropped" src="' + resp + '" name="tab[]"/>';
+                $("#upload-demo-i_"+4).html(html);
+            });
+        });
+        $('.upload-result_5').on('click', function (ev) {
+            $uploadCrop.croppie('result', {
+                type: 'canvas',
+                size: 'viewport'
+            }).then(function (resp) {
+                html = '<img class="image-cropped" src="' + resp + '" name="tab[]"/>';
+                $("#upload-demo-i_"+5).html(html);
+            });
+        });
+        $('.upload-result_6').on('click', function (ev) {
+            $uploadCrop.croppie('result', {
+                type: 'canvas',
+                size: 'viewport'
+            }).then(function (resp) {
+                html = '<img class="image-cropped" src="' + resp + '" name="tab[]"/>';
+                $("#upload-demo-i_"+6).html(html);
+            });
+        });
+  
       $(function(){
         'use strict';
 
@@ -104,18 +235,6 @@
       /*those function related to view roles by @hamza*/
       /*end section of @hamza*/
       </script>
-        <!-- CKD Editor For Alerts Create And Alerte Update -->
-        <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
-        <script>
-            CKEDITOR.replace( 'email-content' );
-        </script>
-        <script>
-            CKEDITOR.replace( 'system-content' );
-        </script>
-           <style type="text/css">
-            .mouseHover:hover {
-             cursor: pointer;
-            }
-        </style>
+      
 
 </html>
