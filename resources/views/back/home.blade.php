@@ -34,7 +34,7 @@
         <meta name="author" content="ThemePixels">
 
 
-        <title>Thermodity|NJT</title>
+        <title>NJT|Alsa</title>
 
         <!-- vendor css -->
         <link href="{{ asset('lib/font-awesome/css/font-awesome.css') }}" rel="stylesheet">
