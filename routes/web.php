@@ -22,6 +22,13 @@ Route::get('a-propos-de-nous', function () {
     return view('front.center_page');
 });
 
+// Route Of Multiple Language
+Route::get('locale/{locale}', function ($locale){
+    Session::put('locale', $locale);
+    return redirect()->back();
+});
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
