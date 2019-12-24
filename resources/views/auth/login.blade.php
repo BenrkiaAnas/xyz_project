@@ -17,7 +17,7 @@
     <meta name="author" content="ThemePixels">
 
 
-    <title>NJT | THERMODITY</title>
+    <title>NJT | Alsa</title>
 
     <!-- vendor css -->
     <link href="{{asset('lib/font-awesome/css/font-awesome.css')}}" rel="stylesheet">
@@ -40,7 +40,6 @@
               
 
               <hr>
-              <p>
                 <p>SECURITE</p>
 <!-- Vous n'avez pas de compte? <br> <a href="{{url('/register')}}">s'inscrire maintenant?</a></p> -->
             </div>
@@ -51,12 +50,12 @@
             <h5 class="tx-gray-800 mg-b-25">Connectez-vous à votre compte</h5>
 
             <div class="form-group">
-              <label for="username" class="form-control-label">{{ __('Username') }}</label>
-              <input  class="form-control" id="username" type="text" class="form-control{{ $errors->has('username') ? ' is-invalid' : '' }}" name="username" value="{{ old('username') }}" required autofocus placeholder="Enter your username">
+              <label for="email" class="form-control-label">Email</label>
+              <input  class="form-control" id="email" type="text" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus placeholder="Enter your email">
 
-               @if ($errors->has('username'))
+               @if ($errors->has('email'))
                         <span class="invalid-feedback" role="alert">
-                              <strong>{{ $errors->first('username') }}</strong>
+                              <strong>{{ $errors->first('email') }}</strong>
                          </span>
                 @endif
             </div><!-- form-group -->
@@ -70,6 +69,13 @@
                     </span>
                @endif
             </div><!-- form-group -->
+                <div class="form-group mg-b-20">
+                    @if (Route::has('password.request'))
+                        <a href="{{ route('password.request') }}">
+                            Mot De Passe Oublié
+                        </a>
+                    @endif
+                </div>
 
             
               <button type="submit" class="btn btn-block">

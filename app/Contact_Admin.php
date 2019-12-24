@@ -9,4 +9,8 @@ class Contact_Admin extends Model
     //
     // Disable timestamps
     public $timestamps = false;
+
+    protected $fillable = [
+        'email'
+    ];
 }

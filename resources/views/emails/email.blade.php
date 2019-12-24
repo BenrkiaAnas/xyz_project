@@ -1,7 +1,11 @@
-You received a message from : {{ $full_name }}
+Vous avez reçu un message de : {{ $full_name }}
 
 <p>
-    Name: {{ $full_name }}
+    Nom Complete: {{ $full_name }}
+</p>
+
+<p>
+    Telephone: {{ $phone }}
 </p>
 
 <p>

@@ -8,6 +8,9 @@
     <link href="images/favicon.png" rel="icon">
     <link rel="stylesheet" href="{{asset('css_front/plugins.css')}}">
     <link rel="stylesheet" href="{{asset('css_front/style.css')}}">
+    <link rel="stylesheet" href="{{asset('css_front/style1.css')}}">
+    <link rel="stylesheet" href="{{asset('lib/font-awesome/css/font-awesome.css')}}"/>
+
 
 </head>
 <body  data-spy="scroll" data-target=".navbar" data-offset="90">
@@ -58,10 +61,10 @@
             <div class="collapse navbar-collapse" id="xenav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link " href="index.html">Acceuil</a>
+                        <a class="nav-link " href="{{url('/')}}">Acceuil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="about.html">Le Centre</a>
+                        <a class="nav-link " href="{{url('a-propos-de-nous')}}">Le Centre</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="gallery.html">Galerie</a>
@@ -71,7 +74,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link " href="contact.html">Contact</a>
+                        <a class="nav-link " href="{{url('contact-nous')}}">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -90,10 +93,10 @@
             <nav class="side-nav">
                 <ul class="navbar-nav w-100">
                     <li class="nav-item active">
-                        <a class="nav-link " href="index.html">Acceuil</a>
+                        <a class="nav-link " href="{{url('/')}}">Acceuil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="about.html">Le Centre</a>
+                        <a class="nav-link " href="{{url('a-propos-de-nous')}}">Le Centre</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="gallery.html">Galerie</a>
@@ -103,7 +106,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link " href="contact.html">Contact</a>
+                        <a class="nav-link " href="{{url('contact-nous')}}">Contact</a>
                     </li>
                 </ul>
             </nav>

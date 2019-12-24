@@ -1,24 +1,15 @@
-@extends('dashboard')
+@extends('back.home')
 @section('content')
-    <form action="{{url('/paramter/editPassword')}}" method="POST">
+    <div class="card pd-20 pd-sm-40">
+        <form action="{{url('/paramter/editPassword')}}" method="POST">
         {{csrf_field()}}
 
-        <div class="card pd-20 pd-sm-40">
 
-            <br>
+
             <div class="card-header card-header-default">
                 Parametre
             </div>
-        <!-- <div class="row mg-t-20">
-            <label class="col-sm-1"></label>
-            <label class="col-sm-3 form-control-label">{{ __('Ancien Mot de Passe') }} : <span class="tx-danger">*</span></label>
-            <div class="col-sm-6 mg-t-10 mg-sm-t-0">
-              <input id="oldPassword" type="text" class="form-control {{ $errors->has('password') ? ' is-invalid' : '' }}" name="oldPassword" placeholder="{{ __('Entrez votre ancien Mot de Passe') }}" onfocusout="testPassword()" required >
-              <div id="divOldPassword">
 
-              </div>
-            </div>
-          </div> -->
             <div class="row mg-t-20">
                 <label class="col-sm-1"></label>
                 <label class="col-sm-3 form-control-label">{{ __('Nouveau Mot de Passe') }} : <span class="tx-danger">*</span></label>
@@ -53,28 +44,8 @@
             </div>
 
 
-            <!-- <script type="text/javascript">
-              function testPassword()
-              {
 
-                var password=document.getElementById('oldPassword').value;
-                alert('hello '+password);
-                 $.ajax({
-                    url: '/verifyOldPassword',
-                    data:{oldpassword:password},
-                    type: "GET",
-                    success: function(data){
-                        $('#divOldPassword').html('<span  class="invalid-feedback" role="alert"><strong>Password correct</strong></span>');
-                        console.log(data)
-                    },
-                   error: function (data) {
-                           $('#divOldPassword').html('<span  class="invalid-feedback" role="alert"><strong>Password incorect</strong></span>');
-                           console.log(data)
-                        }
-                });
-              }
-            </script> -->
-            <!--  </form>-->
-        </div>
+
     </form>
+    </div>
 @endsection

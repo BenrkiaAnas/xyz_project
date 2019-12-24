@@ -5,13 +5,10 @@
         <div id="eters" class="tab-pane active  ps ps--theme_default ps--active-y ">
             <ul class="nav am-sideleft-menu">
                     <li class="nav-item">
-                        <a href="" class="nav-link with-sub">
+                        <a href="{{route('add_contact')}}" class="nav-link">
                             <i class="fa fa-address-book tx-24" aria-hidden="true"></i>
                             <span>Contact</span>
                         </a>
-                        <ul class="nav-sub" style="display: none;">
-                                <li class="nav-item"><a href="{{url('/location/index')}}" class="nav-link param">Liste Contact</a></li>
-                        </ul>
                     </li>
 
                         <li class="nav-item">
