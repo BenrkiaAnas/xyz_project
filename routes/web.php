@@ -11,8 +11,15 @@
 |
 */
 
+// Route Pages
 Route::get('/', function () {
-    return view('welcome');
+    return view('front.user_home');
+})->name('home');
+Route::get('contact-nous', function () {
+    return view('front.contact_page');
+});
+Route::get('a-propos-de-nous', function () {
+    return view('front.center_page');
 });
 
 Auth::routes();
@@ -24,6 +31,19 @@ Route::post('faqs/create','FaqController@create');
 Route::get('faqForm',function(){
     return view('createFaq');
 });
+// Route Parameter
+Route::get('parameter','ParameterController@view');
+Route::post('paramter/editPassword','ParameterController@editMyPassword');
+Route::get('/logOut','ParameterController@logout');
+
+
+// Route Contact
+Route::post('contact','ContactController@store')->name('create_contact');
+
+// Route Contact Email
+Route::get('contact','ContactController@view')->name('add_contact');
+Route::post('contactEmail','ContactController@store_email');
+
 //la route d'edition de faq
 Route::get('editFaq/{id}','FaqController@edit');
 //la route d'update' de faq
