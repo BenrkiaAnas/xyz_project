@@ -36,12 +36,14 @@ Route::get('parameter','ParameterController@view');
 Route::post('paramter/editPassword','ParameterController@editMyPassword');
 Route::get('/logOut','ParameterController@logout');
 
+
 // Route Contact
 Route::post('contact','ContactController@store')->name('create_contact');
 
 // Route Contact Email
 Route::get('contact','ContactController@view')->name('add_contact');
 Route::post('contactEmail','ContactController@store_email');
+
 //la route d'edition de faq
 Route::get('editFaq/{id}','FaqController@edit');
 //la route d'update' de faq
