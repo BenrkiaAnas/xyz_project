@@ -24,9 +24,7 @@ Route::get('a-propos-de-nous', function () {
 Route::get('galerie', function () {
     return view('front.gallery_page');
 });
-Route::get('faq', function () {
-    return view('front.faq_page');
-});
+Route::get('faq','FaqController@showFaqClient');
 
 // Route Of Multiple Language
 Route::get('locale/{locale}', function ($locale){
