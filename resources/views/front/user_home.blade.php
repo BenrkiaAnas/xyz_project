@@ -52,7 +52,7 @@
                          data-textAlign="['center','center','center','center']"
                          data-responsive_offset="on" data-start="1000"
                          data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'>
-                        <h1 class="text-capitalize font-xlight whitecolor text-center">Explorer Notre Centre</h1> </div>
+                        <h1 class="text-capitalize font-xlight whitecolor text-center">{{__('Explorer Notre Centre')}}</h1> </div>
 
                     <!-- LAYER NR. 2 -->
                     <div class="tp-caption tp-resizeme"
@@ -62,7 +62,7 @@
                          data-textAlign="['center','center','center','center']"
                          data-responsive_offset="on" data-start="1500"
                          data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'>
-                        <h1 class="text-capitalize fontbold whitecolor text-center">Agir Ensemble</h1> </div>
+                        <h1 class="text-capitalize fontbold whitecolor text-center">{{__('Agir Ensemble')}}</h1> </div>
 
                     <!-- LAYER NR. 3 -->
                     <div class="tp-caption tp-resizeme"
@@ -88,7 +88,7 @@
                          data-textAlign="['center','center','center','center']"
                          data-responsive_offset="on" data-start="1000"
                          data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'>
-                        <h1 class="text-capitalize font-xlight whitecolor text-center">Explorer Notre Centre</h1> </div>
+                        <h1 class="text-capitalize font-xlight whitecolor text-center">{{__('Explorer Notre Centre')}}</h1> </div>
 
                     <!-- LAYER NR. 2 -->
                     <div class="tp-caption tp-resizeme"
@@ -98,7 +98,7 @@
                          data-textAlign="['center','center','center','center']"
                          data-responsive_offset="on" data-start="1500"
                          data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'>
-                        <h1 class="text-capitalize fontbold whitecolor text-center">Agir Ensemble</h1> </div>
+                        <h1 class="text-capitalize fontbold whitecolor text-center">{{__('Agir Ensemble')}}</h1> </div>
 
                     <!-- LAYER NR. 3 -->
                     <div class="tp-caption tp-resizeme"
@@ -120,7 +120,7 @@
     <!--Main Slider ends -->
 
     <!--Some Services-->
-    <div class="container">
+    <div class="container carousel-element">
         <div class="row">
             <div class="col-md-12">
                 <div id="services-slider" class="owl-carousel">
@@ -155,23 +155,23 @@
 
     <!--Some Feature -->
 
-    <section id="our-blog" class="half-section">
+    <section id="our-blog" class="half-section ">
         <div class="container">
-            <div class="row">
-                <div class="col-md-5 col-sm-12">
+            <div class="row reverse-direction">
+                <div class="col-md-5 col-sm-12 ">
                     <div class="image hover-effect"><img src="{{asset('images/split-blog.jpg')}}" alt="our blog" class="equalheight"></div>
                 </div>
-                <div class="col-md-7 col-sm-12">
+                <div class="col-md-7 col-sm-12 ">
                     <div class="split-box center-block equalheight container-padding">
-                        <div class="heading-title padding_half">
-               <span class="wow fadeIn" data-wow-delay="300ms">SENSIBILISER
+                        <div class="heading-title text-end">
+               <span class="wow fadeIn position-left-sml" data-wow-delay="300ms">SENSIBILISER
 </span>
-                            <h2 class="darkcolor bottom25 wow fadeIn" data-wow-delay="350ms">{{__('Découvrir notre Centre')}}</h2>
-                            <p class="bottom30 wow fadeInUp" data-wow-delay="400ms">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
+                            <h2 class="darkcolor bottom25 wow fadeIn text-end" data-wow-delay="350ms">{{__('Découvrir notre Centre')}}</h2>
+                            <p class="bottom30 wow fadeInUp text-end" data-wow-delay="400ms">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
 
 
 
-                            <a href="#" class="button btnsecondary wow fadeInUp" data-wow-delay="450ms">{{__('Lire Plus')}}</a>
+                            <a href="#" class="button btnsecondary wow fadeInUp text-end" data-wow-delay="450ms">{{__('Lire Plus')}}</a>
                         </div>
 
                     </div>
@@ -188,7 +188,7 @@
     <section id="portfolio-xe" class="bglight padding">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 offset-md-2 col-sm-12 text-center">
+                <div class="col-md-8 offset-md-2 col-sm-12 text-center  ar-center-element">
                     <div class="heading-title wow fadeInUp" data-wow-delay="300ms">
                         <span>{{__('DERNIERS ÉVÈNEMENTS')}}</span>
                         <h3 class="darkcolor bottom10">{{__('Differents Cours à Télècharger')}}</h3>
@@ -313,9 +313,9 @@
     <section id="our-team" class="padding bglight">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 offset-md-2 col-sm-12 text-center">
+                <div class="col-md-8 offset-md-2 col-sm-12 text-center ar-center-element">
                     <div class="heading-title wow fadeInUp" data-wow-delay="300ms">
-               <span>{{__('FORMATEURS')}}
+               <span class="">{{__('FORMATEURS')}}
 </span>
                         <h2 class="darkcolor bottom20">{{__('Rencontrez nos Formateurs')}}</h2>
                         <p class="heading_space">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
@@ -383,10 +383,10 @@
             <div class="row">
                 <div class="col-md-7 col-sm-7 wow fadeInLeft" data-wow-delay="300ms">
                     <div class="heading-title text-md-left text-center padding_bottom">
-                        <span>{{__('VOUS VOULEZ DEVENIR UN FORMATEUR ?')}} </span>
-                        <h2 class="fontregular bottom20 darkcolor">{{__('Savoir Plus')}}</h2>
-                        <p>Lorem ipsum gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt mauris. </p>
-                        <a href="#contactus" class="button btnprimary top20 pagescroll">{{__('Contactez Nous')}}</a>
+                        <span class="text-end">{{__('VOUS VOULEZ DEVENIR UN FORMATEUR ?')}} </span>
+                        <h2 class="fontregular bottom20 darkcolor  text-end">{{__('Savoir Plus')}}</h2>
+                        <p class="text-end">Lorem ipsum gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt mauris. </p>
+                        <a href="#contactus" class="button btnprimary top20 pagescroll position-left ">{{__('Contactez Nous')}}</a>
                     </div>
                 </div>
                 <div class="col-md-5 col-sm-5 padding_bottom wow fadeInRight" data-wow-delay="350ms">
@@ -411,7 +411,7 @@
 
 
     <!-- Partners -->
-    <section id="logos" class="padding">
+    <section id="logos" class="padding partners">
         <div class="container">
             <h3 class="invisible">hidden</h3>
             <div class="row">

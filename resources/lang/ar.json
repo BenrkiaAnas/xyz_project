@@ -1,5 +1,6 @@
 {
   "Accueil" : "الرئيسية",
+  "Agir Ensemble" : "العمل معًا",
   "Appelez Nous" : "اتصل بنا",
   "A PROPOS DE NOUS" : "نبذة عنا",
   "Bibliothèque et magasins" : "مكتبة ومتاجر",
@@ -19,6 +20,7 @@
   "Enseignants Qualifiés" : "المعلمين المؤهلين",
   "Enseignement Numérique" : "التعليم الرقمي",
   "Étude de Marché": "دراسة السوق",
+  "Explorer Notre Centre" : "استكشف مركزنا",
   "FAQ" : "التعليمات",
   "FORMATEURS" : "المدربين",
   "Full Support" : "الدعم الكامل",
@@ -30,14 +32,18 @@
   "MISSION" : "مهمة",
   "Nom:" : "اسم:",
   "Notre Addresse" : "عنواننا",
+  "NOTRE GALERIE" : "معرضنا",
   "Notre vision du Centre" : "رؤيتنا للمركز",
   "Online Reputation" : "السمعة عبر الإنترنت",
   "Prénom:" : "اللقب:",
+  "Question Fréquemment Posée" : "السؤال الذي يتكرر طرحه",
   "Rencontrez nos Formateurs" : "تعرّف على مدربينا",
   "Résultats Connus" : "النتائج المعروفة",
   "Savoir Plus" : "معرفة المزيد",
   "Tél:" : "الهاتف:",
   "TÉMOIGNAGES" : "شهادات",
   "Voir ce que nos étudiants ont à dire" : "انظر ما يقوله طلابنا",
-  "VOUS VOULEZ DEVENIR UN FORMATEUR ?" : "تريد أن تصبح مدرب ؟"
+  "Voir Nos Derniers Evenements En Photos" : "انظر أحدث الأحداث لدينا في الصور",
+  "VOUS VOULEZ DEVENIR UN FORMATEUR ?" : "تريد أن تصبح مدرب ؟",
+  "VOS QUESTIONS" : "أسئلتكم"
 }

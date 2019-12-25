@@ -49,7 +49,7 @@
     <div class="breadcrumb-main">
         <div class="container">
             <ul class="breadcrumb">
-                <li><a href="{{url('/')}}">{{__('Acceuil')}}</a></li>
+                <li><a href="{{url('/')}}">{{__('Accueil')}}</a></li>
                 <li class="active">{{__('Le Centre')}}</li>
             </ul>
         </div>
@@ -62,7 +62,7 @@
             <div class="about_services">
                 <div class="row">
                     <div class="col-sm-6">
-                        <div class="about-items">
+                        <div class="about-items text-end">
                             <div class="inner-heading">
                                 <h3>{{__('A PROPOS DE NOUS')}}</h3>
                                 <h2 class="mar-0">{{__('Découvrir notre Centre')}}</h2>
@@ -105,7 +105,7 @@
         <div class="container">
             <div class="row panel-grid-banner">
                 <div class="col-sm-4 col-xs-12">
-                    <div class="inner-grid">
+                    <div class="inner-grid text-end">
                         <div class="text-courses">
                             <i class="fa fa-laptop"></i>
                             <h3>{{__('Cours en Lignes')}}</h3>
@@ -117,7 +117,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4 col-xs-12">
-                    <div class="inner-grid">
+                    <div class="inner-grid text-end">
                         <div class="text-courses">
                             <i class="fa fa-users"></i>
                             <h3>{{__('Enseignants Qualifiés')}}</h3>
@@ -129,7 +129,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4 col-xs-12">
-                    <div class="inner-grid">
+                    <div class="inner-grid text-end">
                         <div class="text-courses">
                             <i class="fa fa-book"></i>
                             <h3>{{__('Bibliothèque et magasins')}}</h3>
@@ -148,7 +148,7 @@
     <!--* Mission Area*-->
     <section id="mission_main" class="mission-area section-padding">
         <div class="container">
-            <div class="row">
+            <div class="row text-end">
                 <div class="col-lg-6 col-sm-6 col-xs-12">
                     <div class="mission-content">
                         <div class="inner-heading">
@@ -218,7 +218,7 @@
     <!--* End Mission Area*-->
 
     <!--* Testimonial*-->
-    <section id="const-testi" class="edu-testimonial">
+    <section id="const-testi" class="edu-testimonial text-end">
         <div class="container wow slideInDown" data-wow-duration="2s">
             <div class="row">
                 <div class="col-sm-6">
