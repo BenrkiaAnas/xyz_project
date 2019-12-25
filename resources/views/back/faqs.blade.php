@@ -10,24 +10,28 @@
                   <tr>
                     <th class="wd-15p">{{__('Question')}}</th>
                     <th class="wd-15p">{{__('Reponse')}}</th>
+                    <th class="wd-15p">{{__('اسئلة')}}</th>
+                    <th class="wd-15p">{{__('اجوبة')}}</th>
                     <th class="wd-10p">{{__('Etat')}}</th>
                     <th class="wd-10p">{{__('Actions')}}</th>
                   </tr>
                 </thead>
                 <tbody>
                     @foreach ($faqs as $faq )
-                    <tr>
-                            <td>{{$faq->question}}</td>
-                            <td>{{$faq->reponse}}</td>
-                            <td  style="text-align: center" id="td_{{$faq->id}}">
-                              @if($faq->status==0)
-                               <i class="fa fa-power-off x2 mouseHover" style="color: red;font-size:24px" onclick="activeDesactive('{{$faq->id}}',1)"></i>
+                    <tr> 
+                            <td>{{$faq['question']['fr']}}</td>
+                            <td>{{$faq['reponse']['ar']}}</td>
+                            <td>{{$faq['question']['fr']}}</td>
+                            <td>{{$faq['reponse']['ar']}}</td>
+                            <td  style="text-align: center" id="td_{{$faq['id']}}">
+                              @if($faq['status']==0)
+                               <i class="fa fa-power-off x2 mouseHover" style="color: red;font-size:24px" onclick="activeDesactive('{{$faq['id']}}',1)"></i>
                               @else
-                               <i class="fa fa-power-off x2 mouseHover" style="color: green;font-size:24px" onclick="activeDesactive('{{$faq->id}}',0)"></i>
+                               <i class="fa fa-power-off x2 mouseHover" style="color: green;font-size:24px" onclick="activeDesactive('{{$faq['id']}}',0)"></i>
                               @endif
                             </td>
                             <td>
-                                <a href="{{url('editFaq/'.$faq->id)}}" class="btn btn-primary btn-icon rounded-circle ">
+                                <a href="{{url('editFaq/'.$faq['id'])}}" class="btn btn-primary btn-icon rounded-circle ">
                                     <div><i class="fa fa-pencil"></i></div>
                                 </a>
                                {{--<a href="{{url('/faqs/show/'.$faq->id)}}" class="btn btn-primary btn-icon rounded-circle ">

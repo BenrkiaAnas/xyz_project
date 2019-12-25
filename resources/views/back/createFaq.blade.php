@@ -18,6 +18,22 @@
                 <textarea rows="2" class="form-control"  name="reponse" placeholder="{{ __('Entrez la reponse') }}" required></textarea>
               </div>
         </div>
+        <p class="mg-b-20 mg-sm-b-30"></p>
+        
+        <div class="row">
+          <label class="col-sm-4 form-control-label">{{ __('السؤال') }} : <span class="tx-danger">*</span></label>
+          <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+            <input type="text" name="question_ar"  class="form-control" placeholder="{{ __(' السؤال') }}" required>
+          </div>
+        </div>
+        <div class="row mg-t-20">
+              <label class="col-sm-4 form-control-label">{{ __('reponse') }}: <span class="tx-danger">*</span></label>
+              <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                <textarea rows="2" class="form-control"  name="reponse_ar" placeholder="{{ __(' الاجابة ') }}" required></textarea>
+              </div>
+        </div>
+
+
         <div class="row row-xs mg-t-30">
             <div class="form-layout-footer">
               <button class="btn btn-info mg-r-5" name="action" value="refresh" >{{__('Enregistrer et Continuer')}}</button>

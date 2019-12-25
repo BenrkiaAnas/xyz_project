@@ -29,7 +29,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('faqs','FaqController@getFaqs');
 Route::post('faqs/create','FaqController@create');
 Route::get('faqForm',function(){
-    return view('createFaq');
+    return view('back.createFaq');
 });
 // Route Parameter
 Route::get('parameter','ParameterController@view');
@@ -55,4 +55,4 @@ Route::get('/galery',function(){
 });
 Route::post('tester','GaleryController@tester');
 Route::get('image-crop', 'GaleryController@imageCrop');
-Route::post('image-crop', 'GaleryController@imageCropPost');
+Route::post('image/crop', 'GaleryController@imageCropPost');

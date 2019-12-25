@@ -9,15 +9,31 @@
         <div class="row">
           <label class="col-sm-4 form-control-label">{{ __('question') }} : <span class="tx-danger">*</span></label>
           <div class="col-sm-8 mg-t-10 mg-sm-t-0">
-            <input type="text" name="question"  class="form-control" value="{{$faq->question}}" required>
+          <input type="text" name="question"  class="form-control" value="{{$question}}" required>
           </div>
         </div>
         <div class="row mg-t-20">
               <label class="col-sm-4 form-control-label">{{ __('reponse') }}: <span class="tx-danger">*</span></label>
               <div class="col-sm-8 mg-t-10 mg-sm-t-0">
-                <textarea rows="2" class="form-control"  name="reponse" placeholder="" required>{{$faq->reponse}}</textarea>
+                <textarea rows="2" class="form-control"  name="reponse" placeholder="reponse" required>{{$reponse}}</textarea>
               </div>
         </div>
+        <p class="mg-b-20 mg-sm-b-30"></p>
+        <div class="row">
+          <label class="col-sm-4 form-control-label">{{ __('السؤال') }} : <span class="tx-danger">*</span></label>
+          <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+            
+
+            <input type="text" name="question_ar"  class="form-control" placeholder="السؤال "  value="{{$question_ar}}" required>
+          </div>
+        </div>
+        <div class="row mg-t-20">
+              <label class="col-sm-4 form-control-label">{{ __('الاجابة') }}: <span class="tx-danger">*</span></label>
+              <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                <textarea rows="2" class="form-control" name="reponse_ar" placeholder="{{ __(' الاجابة ') }}" value="" required>{{$reponse_ar}}</textarea>
+              </div>
+        </div>
+        <p class="mg-b-20 mg-sm-b-30"></p>
         <div class="row row-xs mg-t-30">
           <div class="col-sm-8 mg-l-auto">
             <div class="form-layout-footer">
