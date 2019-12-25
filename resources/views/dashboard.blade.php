@@ -126,13 +126,14 @@
         
         function uploadResult()
         {
-          alert(1);
-          var table=[];
+         
+          var table=new Array();
           $('img.image-cropped').each(function() {
-               table=$(this).attr('src');
+               src=$(this).attr('src');
+               table.push(src);
                  });
            $.ajax({
-              url:'/image-crop',
+              url:'image/crop',
               type:'POST',
               data:{images:table},
               success:function(data){

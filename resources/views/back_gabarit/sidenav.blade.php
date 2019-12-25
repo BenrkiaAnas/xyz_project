@@ -17,7 +17,7 @@
                                 <span>Gallery</span>
                             </a>
                             <ul class="nav-sub" style="display: none;">
-                                    <li class="nav-item"><a href="{{url('/boxes/create')}}" class="nav-link param">Create Gallery</a></li>
+                                    <li class="nav-item"><a href="{{url('/image-crop')}}" class="nav-link param">Gallery</a></li>
                                     <li class="nav-item"><a href="{{ url('/boxes') }}" class="nav-link param">List Gallery</a></li>
                             </ul>
                         </li>
@@ -28,8 +28,8 @@
                                 <span>FAQ</span>
                             </a>
                             <ul class="nav-sub" style="display: none;">
-                                    <li class="nav-item"><a href="{{url('/sensors/create')}}" class="nav-link param">Create FAQ</a></li>
-                                <li class="nav-item"><a href="{{ url('/sensors') }}" class="nav-link param">Liste FAQ</a></li>
+                                    <li class="nav-item"><a href="{{url('/faqForm')}}" class="nav-link param">Create FAQ</a></li>
+                                <li class="nav-item"><a href="{{ url('/faqs') }}" class="nav-link param">Liste FAQ</a></li>
                             </ul>
                         </li>
 

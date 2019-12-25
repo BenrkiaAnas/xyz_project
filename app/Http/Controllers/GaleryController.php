@@ -27,28 +27,24 @@ class GaleryController extends Controller
 
     public function imageCropPost(Request $request)
     {
-         echo 1;
-         foreach($request->table as $data)
-         {
-            $data = $request->image;
-            echo "ici";
-         }
-        $data = $request->image;
-      exit;
-
-        list($type, $data) = explode(';', $data);
-        list(, $data)      = explode(',', $data);
-
-
-        $data = base64_decode($data);
-      
-        $image_name= time().'.png';
-        $path = public_path('img/'). $image_name;
-       //$x= Storage::disk('public')->put($image_name, $data);
         
-       file_put_contents($path, $data);
+        $datas = $request->images;
        
-
+        $i=1;
+         foreach($datas as $data)
+         {
+            list($type, $data) = explode(';', $data);
+            list(, $data)      = explode(',', $data);
+    
+    
+            $data = base64_decode($data);
+          
+            $image_name= $i.'_'.time().'.png';
+            $path = public_path('img/'). $image_name;
+            
+           file_put_contents($path, $data);
+           $i++;
+         }
         return response()->json(['success'=>'done']);
     }
 
