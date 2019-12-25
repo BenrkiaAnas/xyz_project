@@ -4,12 +4,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12">
-                    <div class="heading-title heading_space wow fadeInUp" data-wow-delay="300ms">
+                    <div class="heading-title heading_space wow fadeInUp  text-end" data-wow-delay="300ms">
                         <span>{{__('CONTACT')}}</span>
                         <h2 class="darkcolor">{{__('Laissez Nous Un Message')}}</h2>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12 margin_bottom wow fadeInUp" data-wow-delay="350ms">
+                <div class="col-md-6 col-sm-12 margin_bottom wow fadeInUp  text-end" data-wow-delay="350ms">
                     <p>West is not just about graphic design; it's more than that. We offer integral communication services, and we're responsible for our process and results. We thank each client and their projects.</p>
                     <div class="row">
                         <div class="col-md-6 col-sm-6 our-address top40">

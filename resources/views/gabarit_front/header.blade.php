@@ -2,7 +2,7 @@
 <header class="site-header transparent-sidemenu">
     <nav class="navbar navbar-expand-lg transparent-bg static-nav">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand left-image" href="index.html">
                 <img src="{{asset('images/logo-transparent.png')}}" alt="logo">
             </a>
             <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#xenav">
@@ -25,21 +25,18 @@
                         <a class="nav-link  " href="{{url('a-propos-de-nous')}}">{{__('Le Centre')}}</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link  " href="gallery.html">{{__('Galerie')}}</a>
+                        <a class="nav-link  " href="{{url('galerie')}}">{{__('Galerie')}}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  " href="faq.html">{{__('FAQ')}}</a>
+                        <a class="nav-link  " href="{{url('faq')}}">{{__('FAQ')}}</a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link  " href="{{url('contact-nous')}}">{{__('Contact')}}</a>
                     </li>
                     <li class="nav-item">
-                        <ul class="list-inline">
-                            <li class="list-inline-item"><a href="{{ url('locale/fr') }}" >Fr</a></li>
-                            <li class="list-inline-item">|</li>
-                            <li class="list-inline-item"><a href="{{ url('locale/ar') }}" >Ar</a></li>
-                        </ul>
+                        <a class="nav-link  " style="display: inline-block; padding-left: 0 !important; padding-right: 0 !important" href="{{ url('locale/fr') }}" >Fr</a>
+                        <a class="nav-link  " style="display: inline-block; padding-left: 0 !important; padding-right: 0 !important" href="{{ url('locale/ar') }}" >Ar</a>
                     </li>
 
                 </ul>
@@ -65,10 +62,10 @@
                         <a class="nav-link  " href="{{url('a-propos-de-nous')}}">{{__('Le Centre')}}</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link  " href="gallery.html">{{__('Galerie')}}</a>
+                        <a class="nav-link  " href="{{url('galerie')}}">{{__('Galerie')}}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  " href="faq.html">{{__('FAQ')}}</a>
+                        <a class="nav-link  " href="{{url('faq')}}">{{__('FAQ')}}</a>
                     </li>
 
                     <li class="nav-item">

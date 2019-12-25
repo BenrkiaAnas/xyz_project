@@ -4144,3 +4144,9 @@ html{
 .buttonBar {
     display: none;
 }
+/* Styling language */
+#xenav ul li:last-child a:first-child:after
+{
+    content: '|';
+    margin-left: 5px;
+}
