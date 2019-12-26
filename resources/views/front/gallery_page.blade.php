@@ -48,7 +48,7 @@
     <div class="breadcrumb-main">
         <div class="container">
             <ul class="breadcrumb">
-                <li><a href="{{url('/')}}">{{__('Accueil')}}</a></li>
+                <li><a href="index.html">{{__('Accueil')}}</a></li>
                 <li class="active">{{__('Galerie')}}</li>
             </ul>
         </div>
@@ -59,7 +59,7 @@
     <section id="the-gallery" class="wide-gallery inner-gallery section-inner">
         <div class="container">
             <!-- section title -->
-            <div class="inner-heading">
+            <div class="inner-heading text-end">
                 <h3>{{__('NOTRE GALERIE')}}</h3>
                 <h2>{{__('Voir Nos Derniers Evenements En Photos')}}</h2>
             </div>
