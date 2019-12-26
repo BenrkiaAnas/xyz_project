@@ -18,7 +18,7 @@
                             </a>
                             <ul class="nav-sub" style="display: none;">
                                     <li class="nav-item"><a href="{{url('/image-crop')}}" class="nav-link param">Gallery</a></li>
-                                    <li class="nav-item"><a href="{{ url('/boxes') }}" class="nav-link param">List Gallery</a></li>
+                                    <li class="nav-item"><a href="{{ url('/gallery/list') }}" class="nav-link param">List Gallery</a></li>
                             </ul>
                         </li>
 

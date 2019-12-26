@@ -69,3 +69,8 @@ Route::get('/galery',function(){
 Route::post('tester','GaleryController@tester');
 Route::get('image-crop', 'GaleryController@imageCrop');
 Route::post('image/crop', 'GaleryController@imageCropPost');
+Route::get('gdetails',function(){
+    return view('gdetails');
+});
+Route::post('create/gallery','GaleryController@create');
+Route::get('gallery/list','GaleryController@getGallery');

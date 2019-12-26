@@ -66,52 +66,52 @@
             <div class="row">
                 <div class="col-sm-4 mix">
                     <div class="item port-popup">
-                        <a href="images/gallery/gl-02.jpg" title="">
-                            <img src="images/gallery/gl-02.jpg" alt="">
+                        <a href="{{App\Gallery::getImagePosition('1')}}" title="">
+                        <img src="{{App\Gallery::getImagePosition('1')}}" alt="">
                             <i class="fa fa-search"></i>
                         </a>
                     </div>
                     <div class="item port-popup">
-                        <a href="images/gallery/gl-01.jpg" title="">
-                            <img src="images/gallery/gl-01.jpg" alt="">
-                            <i class="fa fa-search"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-sm-4 mix">
-                    <div class="item port-popup">
-                        <a href="images/gallery/gl-s1.jpg" title="">
-                            <img src="images/gallery/gl-s1.jpg" alt="">
+                        <a href="{{App\Gallery::getImagePosition('2')}}" title="">
+                            <img src="{{App\Gallery::getImagePosition('2')}}" alt="">
                             <i class="fa fa-search"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-sm-4 mix">
                     <div class="item port-popup">
-                        <a href="images/gallery/gl-03.jpg" title="">
-                            <img src="images/gallery/gl-03.jpg" alt="">
+                        <a href="{{App\Gallery::getImagePosition('3')}}" title="">
+                            <img src="{{App\Gallery::getImagePosition('3')}}" alt="">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4 mix">
+                    <div class="item port-popup">
+                        <a href="{{App\Gallery::getImagePosition('4')}}" title="">
+                            <img src="{{App\Gallery::getImagePosition('4')}}" alt="">
                             <i class="fa fa-search"></i>
                         </a>
                     </div>
                     <div class="item port-popup">
-                        <a href="images/gallery/gl-04.jpg" title="">
-                            <img src="images/gallery/gl-04.jpg" alt="">
+                        <a href="{{App\Gallery::getImagePosition('5')}}" title="">
+                            <img src="{{App\Gallery::getImagePosition('5')}}" alt="">
                             <i class="fa fa-search"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-sm-6 mix">
                     <div class="item port-popup">
-                        <a href="images/gallery/gl-02.jpg" title="">
-                            <img src="images/gallery/gl-02.jpg" alt="">
+                        <a href="{{App\Gallery::getImagePosition('6')}}" title="">
+                            <img src="{{App\Gallery::getImagePosition('6')}}" alt="">
                             <i class="fa fa-search"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-sm-6 mix">
                     <div class="item port-popup">
-                        <a href="images/gallery/gl-01.jpg" title="">
-                            <img src="images/gallery/gl-01.jpg" alt="">
+                        <a href="{{App\Gallery::getImagePosition('7')}}" title="">
+                            <img src="{{App\Gallery::getImagePosition('7')}}" alt="">
                             <i class="fa fa-search"></i>
                         </a>
                     </div>

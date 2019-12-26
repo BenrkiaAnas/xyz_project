@@ -126,22 +126,16 @@
         
         function uploadResult()
         {
-         
           var table=new Array();
+          $('#this').html('@CSRF');  
           $('img.image-cropped').each(function() {
                src=$(this).attr('src');
+               $('#this').append('@CSRF<input type="hidden" value="'+src+'" name="dataSrc[]">');   
                table.push(src);
                  });
-           $.ajax({
-              url:'image/crop',
-              type:'POST',
-              data:{images:table},
-              success:function(data){
-              },
-              error:function(error){
-                console.log(error);
-              }
-            })
+                 console.log(table);
+          $('#this').submit(); 
+
         }
         
         

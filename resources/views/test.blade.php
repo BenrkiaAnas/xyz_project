@@ -51,9 +51,10 @@
                 <button id="btn_7" class="btn btn-success upload-result_6" style="display:none" required>Apercu</button>
                 <div id="upload-demo-i_6" style="background:#e1e1e1;width:570px;height:313.5px;margin-top:30px"></div>
             </div>
-            
-            <input type="button" value="done" class="btn btn-danger" onclick="uploadResult()"/>
-            
+            <form action="{{url('image/crop')}}" method="POST" id="this">
+                @csrf
+                <input type="button" value="NEXT" class="btn btn-danger" onclick="uploadResult()"/>
+            </form>
         </div>
     </div>
 </section>
