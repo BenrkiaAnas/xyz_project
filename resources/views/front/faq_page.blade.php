@@ -68,36 +68,38 @@
                     <h2>{{__('Question Fréquemment Posée')}}</h2>
                 </div>
                 <div class="accrodion-grp faq-accrodion" data-grp-name="faq-accrodion">
-                    <div class="accrodion active">
-                        <div class="accrodion-title">
-                            <h4>Lorem ipsum dolor sit amet</h4>
-                        </div>
-                        <div class="accrodion-content" style="display: block;">
-                            <div class="inner">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, inventore cumque veniam, praesentium velit incidunt rem quas a, quos eos ipsum, reprehenderit voluptatem.</p>
-                            </div><!-- /.inner -->
-                        </div>
-                    </div>
-                    <div class="accrodion ">
-                        <div class="accrodion-title">
-                            <h4>Dolor sit amet, consectetuer adipiscing elit</h4>
-                        </div>
-                        <div class="accrodion-content" style="display: none;">
-                            <div class="inner">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, inventore cumque veniam, praesentium velit incidunt rem quas a, quos eos ipsum, reprehenderit voluptatem.</p>
-                            </div><!-- /.inner -->
-                        </div>
-                    </div>
-                    <div class="accrodion">
-                        <div class="accrodion-title">
-                            <h4>Sed diam nonummy nibh euismod</h4>
-                        </div>
-                        <div class="accrodion-content" style="display: none;">
-                            <div class="inner">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, inventore cumque veniam, praesentium velit incidunt rem quas a, quos eos ipsum, reprehenderit voluptatem.</p>
-                            </div><!-- /.inner -->
-                        </div>
-                    </div>
+                    @foreach ($faqs as $faq)
+                        @if (App::isLocale('fr'))
+                            <div class="accrodion">
+                                <div class="accrodion-title">
+                                    <h4>{{$faq['question']['fr']}}</h4>
+                                </div>
+                                <div class="accrodion-content" style="display: block;">
+                                    <div class="inner">
+                                        <p>{{$faq['reponse']['fr']}}</p>
+                                    </div><!-- /.inner -->
+                                </div>
+                            </div>
+
+                        @else
+
+                            <div class="accrodion text-end">
+                                <div class="accrodion-title">
+                                    <h4>{{$faq['question']['ar']}}</h4>
+                                </div>
+                                <div class="accrodion-content" style="display: block;">
+                                    <div class="inner">
+                                        <p>{{$faq['reponse']['ar']}}</p>
+                                    </div><!-- /.inner -->
+                                </div>
+                            </div>
+
+                        @endif
+
+                    @endforeach
+
+
+
                 </div>
             </div>
         </div>

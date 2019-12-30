@@ -8,6 +8,11 @@ use Illuminate\Http\Request;
 class FaqController extends Controller
 {
 
+    // Prevent Other To Access These Routes
+    public function __construct()
+    {
+        $this->middleware('auth')->except(['showFaqClient']);
+    }
   // la fonction d'affichage du faqs 
     public function getFaqs()
     {  
@@ -19,6 +24,7 @@ class FaqController extends Controller
             $faqs[$key]['reponse']=json_decode($val['reponse'],true);
         }
        // print_r($faqs);exit;
+        dd($faqs);
         if($faqs)
         {
             return view('back.faqs',['faqs'=>$faqs]);
@@ -94,5 +100,26 @@ public function activeDesactive(Request $request)
     return Response()->json('error');
    }
 }
+
+
+    // Function Show Faq's In The Client Side
+    public function showFaqClient()
+    {
+        $faqs=Faq::all();
+        $faqs =$faqs->toArray();
+        foreach($faqs as $key => $val)
+        {
+            $faqs[$key]['question']=json_decode($val['question'],true);
+            $faqs[$key]['reponse']=json_decode($val['reponse'],true);
+        }
+        if($faqs)
+        {
+            return view('front.faq_page')->with('faqs',$faqs);
+        }else{
+            $faqs = array();
+            return view('front.faq_page')->with('faqs',$faqs);
+        }
+
+    }
 
 }
