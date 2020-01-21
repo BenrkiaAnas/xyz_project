@@ -24,7 +24,6 @@ class FaqController extends Controller
             $faqs[$key]['reponse']=json_decode($val['reponse'],true);
         }
        // print_r($faqs);exit;
-        dd($faqs);
         if($faqs)
         {
             return view('back.faqs',['faqs'=>$faqs]);
@@ -105,7 +104,7 @@ public function activeDesactive(Request $request)
     // Function Show Faq's In The Client Side
     public function showFaqClient()
     {
-        $faqs=Faq::all();
+        $faqs=Faq::where("status",1)->get();
         $faqs =$faqs->toArray();
         foreach($faqs as $key => $val)
         {
