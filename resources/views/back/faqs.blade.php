@@ -12,17 +12,17 @@
                     <th class="wd-15p">{{__('Reponse')}}</th>
                     <th class="wd-15p">{{__('اسئلة')}}</th>
                     <th class="wd-15p">{{__('اجوبة')}}</th>
-                    <th class="wd-10p">{{__('Etat')}}</th>
-                    <th class="wd-10p">{{__('Actions')}}</th>
+                    <th class="wd-15p">{{__('Etat')}}</th>
+                    <th class="wd-15p">{{__('Actions')}}</th>
                   </tr>
                 </thead>
                 <tbody>
                     @foreach ($faqs as $faq )
                     <tr> 
-                            <td>{{$faq['question']['fr']}}</td>
-                            <td>{{$faq['reponse']['ar']}}</td>
-                            <td>{{$faq['question']['fr']}}</td>
-                            <td>{{$faq['reponse']['ar']}}</td>
+                            <td data-toggle="tooltip" title="{{$faq['question']['fr']}}">{{str_limit($faq['question']['fr'],15,'...')}}</td>
+                            <td data-toggle="tooltip" title="{{$faq['reponse']['fr']}}">{{str_limit($faq['reponse']['fr'],15,'...')}}</td>
+                            <td data-toggle="tooltip" title="{{$faq['question']['ar']}}">{{str_limit($faq['question']['ar'],15,'...')}}.</td>
+                            <td data-toggle="tooltip" title="{{$faq['reponse']['ar']}}">{{str_limit($faq['reponse']['ar'],15,'...')}}</td>
                             <td  style="text-align: center" id="td_{{$faq['id']}}">
                               @if($faq['status']==0)
                                <i class="fa fa-power-off x2 mouseHover" style="color: red;font-size:24px" onclick="activeDesactive('{{$faq['id']}}',1)"></i>

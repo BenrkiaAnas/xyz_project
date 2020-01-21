@@ -227,6 +227,10 @@
 
       });
 
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+
       /*those function related to view roles by @hamza*/
       /*end section of @hamza*/
       </script>

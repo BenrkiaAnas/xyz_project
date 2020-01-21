@@ -52,7 +52,7 @@
                          data-textAlign="['center','center','center','center']"
                          data-responsive_offset="on" data-start="1000"
                          data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'>
-                        <h1 class="text-capitalize font-xlight whitecolor text-center">{{__('Explorer Notre Centre')}}</h1> </div>
+                        <h1 class="text-capitalize font-xlight whitecolor text-center">Explorer Notre Centre</h1> </div>
 
                     <!-- LAYER NR. 2 -->
                     <div class="tp-caption tp-resizeme"
@@ -62,7 +62,7 @@
                          data-textAlign="['center','center','center','center']"
                          data-responsive_offset="on" data-start="1500"
                          data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'>
-                        <h1 class="text-capitalize fontbold whitecolor text-center">{{__('Agir Ensemble')}}</h1> </div>
+                        <h1 class="text-capitalize fontbold whitecolor text-center">Agir Ensemble</h1> </div>
 
                     <!-- LAYER NR. 3 -->
                     <div class="tp-caption tp-resizeme"
@@ -72,7 +72,7 @@
                          data-textAlign="['center','center','center','center']"
                          data-responsive_offset="on" data-start="2000"
                          data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'>
-                        <h4 class="whitecolor font-light text-center">Lorem ipsum dolor sit amet consectetuer adipiscing elit nam nibh nunc varius facilisis eros sed erat</h4> </div>
+                        <h4 class="whitecolor font-light text-center">{!!__("Prévoir et prévenir les accidents de la route dérivés généralement de la méconnaissance du code <br> de la route, de la négligence ou du manque d'attention.")!!}</h4> </div>
                 </li>
 
                 <!-- SLIDE  -->
@@ -88,7 +88,7 @@
                          data-textAlign="['center','center','center','center']"
                          data-responsive_offset="on" data-start="1000"
                          data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'>
-                        <h1 class="text-capitalize font-xlight whitecolor text-center">{{__('Explorer Notre Centre')}}</h1> </div>
+                        <h1 class="text-capitalize font-xlight whitecolor text-center">Explorer Notre Centre</h1> </div>
 
                     <!-- LAYER NR. 2 -->
                     <div class="tp-caption tp-resizeme"
@@ -98,7 +98,7 @@
                          data-textAlign="['center','center','center','center']"
                          data-responsive_offset="on" data-start="1500"
                          data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'>
-                        <h1 class="text-capitalize fontbold whitecolor text-center">{{__('Agir Ensemble')}}</h1> </div>
+                        <h1 class="text-capitalize fontbold whitecolor text-center">Agir Ensemble</h1> </div>
 
                     <!-- LAYER NR. 3 -->
                     <div class="tp-caption tp-resizeme"
@@ -108,7 +108,7 @@
                          data-textAlign="['center','center','center','center']"
                          data-responsive_offset="on" data-start="2000"
                          data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'>
-                        <h4 class="whitecolor font-light text-center">Lorem ipsum dolor sit amet consectetuer adipiscing elit nam nibh nunc varius facilisis eros sed erat</h4> </div>
+                        <h4 class="whitecolor font-light text-center">{!!__("Prévoir et prévenir les accidents de la route dérivés généralement de la méconnaissance du code <br> de la route, de la négligence ou du manque d'attention.")!!}</h4> </div>
                 </li>
 
 
@@ -127,22 +127,22 @@
                     <div class="item">
                         <div class="service-box">
                             <span class="bottom25"><i class="fa fa-clipboard"></i></span>
-                            <h4 class="bottom10"><a href="javascript:void(0)">{{__('Documents à Télècharger')}}</a></h4>
-                            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+                            <h4 class="bottom10"><a href="javascript:void(0)">{{__('Obtenir de l’aide en sécurité')}}</a></h4>
+                            <p class="white_p">{{__("Connaître et respecter les panneaux de signalisation et les règles de circulation")}}</p>
                         </div>
                     </div>
                     <div class="item">
                         <div class="service-box">
                             <span class="bottom25"><i class="fa fa-laptop"></i></span>
-                            <h4 class="bottom10"><a href="javascript:void(0)">{{__('Devenir Formateur')}}</a></h4>
-                            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+                            <h4 class="bottom10"><a href="javascript:void(0)">{{__('Changeons nos habitudes')}}</a></h4>
+                            <p class="white_p">{{__("Développer des comportements et des attitudes responsables, civiques et sécuritaires en relation avec la circulation, dans leur rôle de piétons, de cyclistes et de voyageurs")}}</p>
                         </div>
                     </div>
                     <div class="item">
                         <div class="service-box">
                             <span class="bottom25"><i class="fa fa-support"></i></span>
-                            <h4 class="bottom10"><a href="javascript:void(0)">{{__('Full Support')}}</a></h4>
-                            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+                            <h4 class="bottom10"><a href="javascript:void(0)">{{__("S’améliorer en sécurité")}}</a></h4>
+                            <p class="white_p">{{__("Posséder une réaction appropriée et sûre en tout temps lors de la conduite sur la route")}}</p>
                         </div>
                     </div>
 
@@ -164,14 +164,14 @@
                 <div class="col-md-7 col-sm-12 ">
                     <div class="split-box center-block equalheight container-padding">
                         <div class="heading-title text-end">
-               <span class="wow fadeIn position-left-sml" data-wow-delay="300ms">SENSIBILISER
+               <span class="wow fadeIn position-left-sml" data-wow-delay="300ms">{{__('SENSIBILISER')}}
 </span>
                             <h2 class="darkcolor bottom25 wow fadeIn text-end" data-wow-delay="350ms">{{__('Découvrir notre Centre')}}</h2>
-                            <p class="bottom30 wow fadeInUp text-end" data-wow-delay="400ms">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
+                            <p class="bottom30 wow fadeInUp text-end" data-wow-delay="400ms">{{__("Les accidents de la route sont l’une des principales causes de mortalité dans le monde. À de nombreuses occasions, ces accidents sont évitables. Pour cela, la sécurité routière est essentielle pour atteindre l’objectif de réduction du taux d’accident. L’éducation routière est donc un outil indispensable pour renforcer la sécurité routière auprès du jeune public.")}}</p>
+                            </p>
 
 
-
-                            <a href="#" class="button btnsecondary wow fadeInUp text-end" data-wow-delay="450ms">{{__('Lire Plus')}}</a>
+                            <a href="{{url('a-propos-de-nous')}}" class="button btnsecondary wow fadeInUp text-end" data-wow-delay="450ms">{{__('Lire Plus')}}</a>
                         </div>
 
                     </div>
@@ -191,8 +191,8 @@
                 <div class="col-md-8 offset-md-2 col-sm-12 text-center  ar-center-element">
                     <div class="heading-title wow fadeInUp" data-wow-delay="300ms">
                         <span>{{__('DERNIERS ÉVÈNEMENTS')}}</span>
-                        <h3 class="darkcolor bottom10">{{__('Differents Cours à Télècharger')}}</h3>
-                        <p class="heading_space">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
+                        <h3 class="darkcolor bottom10">{{__('Activités Fréquentes')}}</h3>
+                        <p class="heading_space">{{__("Nos activités se basent sur une méthode pédagogique en sécurité théorique et pratique : les enfants dans la pratique montent aux vélos pour maitriser ce qu’ils ont appris dans la théorie par leurs professeurs qualifiés dans la formation et la Sécurité Routière.")}}</p>
 
                     </div>
                 </div>
@@ -203,92 +203,7 @@
                     <div class="overlay center-block whitecolor">
                         <a class="plus" data-fancybox="gallery" href="images/gallery-flat1.jpg')}}"></a>
                         <h5 class="top30" style="text-align: center;">LA CONDUITE SOUS L’INFLUENCE DE STUPÉFIANTS</h5><br>
-                        <p>
-                            <a href="javascript:void(0)" class="metabox top10 text-uppercase">
-                                <i class="fa fa-user-o"></i> Ecole OUM HANI
-                            </a>
-
-                            <a href="javascript:void(0)" class="metabox top10 text-uppercase">
-                                <i class="fa fa-calendar"></i> 22 Oct,19
-                            </a>
-                        </p>                           <a href="#">Lire Plus</a>
-
-                    </div>
-                </div>
-                <div class="cbp-item graphic print">
-                    <img src="{{asset('images/gallery-flat2.jpg')}}" alt="">
-                    <div class="overlay center-block whitecolor">
-                        <a class="plus" data-fancybox="gallery" href="images/gallery-flat1.jpg')}}"></a>
-                        <h5 class="top30" style="text-align: center;">LA CONDUITE SOUS L’INFLUENCE DE STUPÉFIANTS</h5><br>
-                        <p>
-                            <a href="javascript:void(0)" class="metabox top10 text-uppercase">
-                                <i class="fa fa-user-o"></i> Ecole OUM HANI
-                            </a>
-
-                            <a href="javascript:void(0)" class="metabox top10 text-uppercase">
-                                <i class="fa fa-calendar"></i> 22 Oct,19
-                            </a>
-                        </p>                           <a href="#">Lire Plus</a>
-
-                    </div>
-                </div>
-                <div class="cbp-item logo graphic">
-                    <img src="{{asset('images/gallery-flat3.jpg')}}" alt="">
-                    <div class="overlay center-block whitecolor">
-                        <a class="plus" data-fancybox="gallery" href="{{asset('images/gallery-flat1.jpg')}}"></a>
-                        <h5 class="top30" style="text-align: center;">LA CONDUITE SOUS L’INFLUENCE DE STUPÉFIANTS</h5><br>
-                        <p>
-                            <a href="javascript:void(0)" class="metabox top10 text-uppercase">
-                                <i class="fa fa-user-o"></i> Ecole OUM HANI
-                            </a>
-
-                            <a href="javascript:void(0)" class="metabox top10 text-uppercase">
-                                <i class="fa fa-calendar"></i> 22 Oct,19
-                            </a>
-                        </p>                           <a href="#">Lire Plus</a>
-
-                    </div>
-                </div>
-                <div class="cbp-item print">
-                    <img src="{{asset('images/gallery-flat4.jpg')}}" alt="">
-                    <div class="overlay center-block whitecolor">
-                        <a class="plus" data-fancybox="gallery" href="images/gallery-flat1.jpg')}}"></a>
-                        <h5 class="top30" style="text-align: center;">LA CONDUITE SOUS L’INFLUENCE DE STUPÉFIANTS</h5><br>
-                        <p>
-                            <a href="javascript:void(0)" class="metabox top10 text-uppercase">
-                                <i class="fa fa-user-o"></i> Ecole OUM HANI
-                            </a>
-
-                            <a href="javascript:void(0)" class="metabox top10 text-uppercase">
-                                <i class="fa fa-calendar"></i> 22 Oct,19
-                            </a>
-                        </p>                           <a href="#">Lire Plus</a>
-
-                    </div>
-                </div>
-                <div class="cbp-item logo">
-                    <img src="{{asset('images/gallery-flat5.jpg')}}" alt="">
-                    <div class="overlay center-block whitecolor">
-                        <a class="plus" data-fancybox="gallery" href="images/gallery-flat1.jpg')}}"></a>
-                        <h5 class="top30" style="text-align: center;">LA CONDUITE SOUS L’INFLUENCE DE STUPÉFIANTS</h5><br>
-                        <p>
-                            <a href="javascript:void(0)" class="metabox top10 text-uppercase">
-                                <i class="fa fa-user-o"></i> Ecole OUM HANI
-                            </a>
-
-                            <a href="javascript:void(0)" class="metabox top10 text-uppercase">
-                                <i class="fa fa-calendar"></i> 22 Oct,19
-                            </a>
-                        </p>                           <a href="#">Lire Plus</a>
-
-                    </div>
-                </div>
-                <div class="cbp-item web print graphic">
-                    <img src="{{asset('images/gallery-flat6.jpg')}}" alt="">
-                    <div class="overlay center-block whitecolor">
-                        <a class="plus" data-fancybox="gallery" href="images/gallery-flat1.jpg')}}"></a>
-                        <h5 class="top30" style="text-align: center;">LA CONDUITE SOUS L’INFLUENCE DE STUPÉFIANTS</h5><br>
-                        <p>
+                        <p class="white_p">
                             <a href="javascript:void(0)" class="metabox top10 text-uppercase">
                                 <i class="fa fa-user-o"></i> Ecole OUM HANI
                             </a>
@@ -297,7 +212,92 @@
                                 <i class="fa fa-calendar"></i> 22 Oct,19
                             </a>
                         </p>
-                        <a href="#">Lire Plus</a>
+
+                    </div>
+                </div>
+                <div class="cbp-item graphic print">
+                    <img src="{{asset('images/gallery-flat2.jpg')}}" alt="">
+                    <div class="overlay center-block whitecolor">
+                        <a class="plus" data-fancybox="gallery" href="images/gallery-flat1.jpg')}}"></a>
+                        <h5 class="top30" style="text-align: center;">LA CONDUITE SOUS L’INFLUENCE DE STUPÉFIANTS</h5><br>
+                        <p class="white_p">
+                            <a href="javascript:void(0)" class="metabox top10 text-uppercase">
+                                <i class="fa fa-user-o"></i> Ecole OUM HANI
+                            </a>
+
+                            <a href="javascript:void(0)" class="metabox top10 text-uppercase">
+                                <i class="fa fa-calendar"></i> 22 Oct,19
+                            </a>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="cbp-item logo graphic">
+                    <img src="{{asset('images/gallery-flat3.jpg')}}" alt="">
+                    <div class="overlay center-block whitecolor">
+                        <a class="plus" data-fancybox="gallery" href="{{asset('images/gallery-flat1.jpg')}}"></a>
+                        <h5 class="top30" style="text-align: center;">LA CONDUITE SOUS L’INFLUENCE DE STUPÉFIANTS</h5><br>
+                        <p class="white_p">
+                            <a href="javascript:void(0)" class="metabox top10 text-uppercase">
+                                <i class="fa fa-user-o"></i> Ecole OUM HANI
+                            </a>
+
+                            <a href="javascript:void(0)" class="metabox top10 text-uppercase">
+                                <i class="fa fa-calendar"></i> 22 Oct,19
+                            </a>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="cbp-item print">
+                    <img src="{{asset('images/gallery-flat4.jpg')}}" alt="">
+                    <div class="overlay center-block whitecolor">
+                        <a class="plus" data-fancybox="gallery" href="images/gallery-flat1.jpg')}}"></a>
+                        <h5 class="top30" style="text-align: center;">LA CONDUITE SOUS L’INFLUENCE DE STUPÉFIANTS</h5><br>
+                        <p class="white_p">
+                            <a href="javascript:void(0)" class="metabox top10 text-uppercase">
+                                <i class="fa fa-user-o"></i> Ecole OUM HANI
+                            </a>
+
+                            <a href="javascript:void(0)" class="metabox top10 text-uppercase">
+                                <i class="fa fa-calendar"></i> 22 Oct,19
+                            </a>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="cbp-item logo">
+                    <img src="{{asset('images/gallery-flat5.jpg')}}" alt="">
+                    <div class="overlay center-block whitecolor">
+                        <a class="plus" data-fancybox="gallery" href="images/gallery-flat1.jpg')}}"></a>
+                        <h5 class="top30" style="text-align: center;">LA CONDUITE SOUS L’INFLUENCE DE STUPÉFIANTS</h5><br>
+                        <p class="white_p">
+                            <a href="javascript:void(0)" class="metabox top10 text-uppercase">
+                                <i class="fa fa-user-o"></i> Ecole OUM HANI
+                            </a>
+
+                            <a href="javascript:void(0)" class="metabox top10 text-uppercase">
+                                <i class="fa fa-calendar"></i> 22 Oct,19
+                            </a>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="cbp-item web print graphic">
+                    <img src="{{asset('images/gallery-flat6.jpg')}}" alt="">
+                    <div class="overlay center-block whitecolor">
+                        <a class="plus" data-fancybox="gallery" href="images/gallery-flat1.jpg')}}"></a>
+                        <h5 class="top30" style="text-align: center;">LA CONDUITE SOUS L’INFLUENCE DE STUPÉFIANTS</h5><br>
+                        <p class="white_p">
+                            <a href="javascript:void(0)" class="metabox top10 text-uppercase">
+                                <i class="fa fa-user-o"></i> Ecole OUM HANI
+                            </a>
+
+                            <a href="javascript:void(0)" class="metabox top10 text-uppercase">
+                                <i class="fa fa-calendar"></i> 22 Oct,19
+                            </a>
+                        </p>
+
                     </div>
                 </div>
             </div>
@@ -318,7 +318,7 @@
                <span class="">{{__('FORMATEURS')}}
 </span>
                         <h2 class="darkcolor bottom20">{{__('Rencontrez nos Formateurs')}}</h2>
-                        <p class="heading_space">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
+                        <p class="heading_space">{{__("Les cours en théorie et en pratique sont donnés par des enseignants qualifiés en sécurité Routière et agrées, dotés d’expérience en la matière et ayant l’engagement de transmettre leur savoir-faire aux élèves pour qu’ils deviennent des ambassadeurs de la sécurité.")}}</p>
                     </div>
                 </div>
             </div>
@@ -334,7 +334,7 @@
                                     <h3>Mourad Ihssane</h3>
                                     <p >Signalisation</p> <br><br>
                                     <div class="progress-bars ">
-                                        <p >Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
+                                        <p class="white_p">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
                                     </div>
                                 </div>
                             </div>
@@ -348,7 +348,7 @@
                                     <h3>Ilham Samir</h3>
                                     <p >Signalisation</p> <br><br>
                                     <div class="progress-bars ">
-                                        <p >Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
+                                        <p class="white_p" >Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
                                     </div>
                                 </div>
                             </div>
@@ -363,7 +363,7 @@
                                     <h3>Amal Mahjoubi</h3>
                                     <p >Signalisation</p> <br><br>
                                     <div class="progress-bars ">
-                                        <p >Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
+                                        <p  class="white_p">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
                                     </div>
                                 </div>
                             </div>
@@ -383,9 +383,9 @@
             <div class="row">
                 <div class="col-md-7 col-sm-7 wow fadeInLeft" data-wow-delay="300ms">
                     <div class="heading-title text-md-left text-center padding_bottom">
-                        <span class="text-end">{{__('VOUS VOULEZ DEVENIR UN FORMATEUR ?')}} </span>
+                        <span class="text-end">{{__('VOUS VOULEZ DEVENIR AMBASSADEUR ?')}} </span>
                         <h2 class="fontregular bottom20 darkcolor  text-end">{{__('Savoir Plus')}}</h2>
-                        <p class="text-end">Lorem ipsum gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt mauris. </p>
+                        <p class="text-end">{{__("L’éducation sur la route aspire à cultiver chez le « petit » être humain une série de comportements, d’habitudes et de valeurs qui conduisent à une meilleure coexistence et au respect des droits de la route. Une personne doit marcher sur des voies publiques présentant un certain nombre de dangers, ce qui impose de penser à un ensemble de règles pour assurer la sécurité. Pour apprendre cet ensemble de règles, il faudra d'abord les appliquer au centre de sécurité routière pour enfants d'Alsa et devenir ainsi Ambassadeur de sécurité.")}}</p>
                         <a href="#contactus" class="button btnprimary top20 pagescroll position-left ">{{__('Contactez Nous')}}</a>
                     </div>
                 </div>
