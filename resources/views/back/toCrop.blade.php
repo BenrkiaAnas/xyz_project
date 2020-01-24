@@ -60,7 +60,7 @@
     </div>
     <div class="box-2 img-result hide">
       <!-- result of crop -->
-      <img class="cropped" class="form-control" src="" alt="" name="cropped_image">
+      <img class="cropped" class="form-control" width="<?php echo $_GET['width'] ?>" height="<?php echo $_GET['height'] ?>" src="" alt="" name="cropped_image">
       <input  type="hidden" id="imagehidden" name="cropped_image">
       <input  type="hidden" value="<?php echo $_GET['position'] ?>" name="position">
     </div>

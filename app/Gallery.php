@@ -14,6 +14,7 @@ class Gallery extends Model
         'description',
         'image',
         'position',
+        'date',
     ];
 
     public static function getImagePosition($position){

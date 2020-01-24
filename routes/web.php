@@ -12,6 +12,9 @@
 */
 
 // Route Pages
+Route::match(['get', 'post'], 'register', function () {
+    return abort(404, 'Not Found');
+})->name('register');
 Route::get('/', function () {
     return view('front.user_home');
 })->name('home');

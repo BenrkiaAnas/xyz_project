@@ -121,10 +121,12 @@ class GaleryController extends Controller
         file_put_contents($path, $data);
         //DAO
         DB::table('gallerys')->insert(
-            ['image' =>$image_name,
+            [  
+                'image' =>$image_name,
                 'lieu' =>$lieu,
                 'description'=>$description,
-                'position'=>$position]
+                'position'=>$position,
+                'date'=>$date]
         );
 
 
