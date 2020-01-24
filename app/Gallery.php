@@ -24,8 +24,8 @@ class Gallery extends Model
         return asset('img/'.$object->image);
        }
        else {
-        $object=new Gallery();
-        return asset('img/'.$object->image);
+       
+        return null;
        }
        
 

@@ -10,57 +10,95 @@
             <div class="col-sm-4 mix">
                 <div class="item ">
                     <a href="{{url('toCrop/?width=380&height=209.5&position=1')}}" title="">
-                        <img src="https://dummyimage.com/380x209/000/fff" alt="">
-                        <i class="fas-upload"></i>
-                    </a>
-                </div>
-                <div class="item ">
-                    <a href="{{url('toCrop/?width=380&height=209.5&position=2')}}" title="">
-                        <img src="https://dummyimage.com/380x209/000/fff" alt="">
-                        <i class="fa fa-upload" aria-hidden="true" style="color:white"></i>
-                    </a>
-                </div>
+                       <?php  
+                       if(App\Gallery::getImagePosition('1'))
+                        echo "<img src='".App\Gallery::getImagePosition('1')."' width='380' height='209.5' >";
+                    else 
+                        echo "<img src='https://dummyimage.com/380x209/000/fff'width='380' height='209.5' >";
+                    ;?>
+                    <i class="fas-upload"></i>   
+                </a>
             </div>
-            <div class="col-sm-4 mix">
-                <div class="item ">
-                    <a href="{{url('toCrop/?width=380&height=209.5&position=3')}}" title="">
-                        <img src="https://dummyimage.com/380x418.2/807680/fff" alt="">
-                        <i class="fas-upload"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-4 mix">
-                <div class="item ">
-                    <a href="{{url('toCrop/?width=380&height=209&position=4')}}" title="">
-                        <img src="https://dummyimage.com/380x209/000/fff" alt="">
-                        <i class="fas-upload"></i>
-                    </a>
-                </div>
-                <div class="item ">
-                    <a href="{{url('toCrop/?width=380&height=209&position=5')}}" title="">
-                        <img src="https://dummyimage.com/380x209/000/fff" alt="">
-                        <i class="fas-upload"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-6 mix">
-                <div class="item ">
-                    <a href="{{url('toCrop/?width=570&height=313.5&position=6')}}" title="">
-                        <img src="https://dummyimage.com/570x313.5/ebc3eb/000000" alt="">
-                        <i class="fas fa-upload"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-6 mix">
-                <div class="item ">
-                    <a href="{{url('toCrop/?width=570&height=313.5&position=7')}}" title="">
-                        <img src="https://dummyimage.com/570x313.5/ebc3eb/000000" alt="">
-                        <i class="fas-upload"></i>
-                    </a>
-                </div>
-            </div>
+            <div class="item ">
+                <a href="{{url('toCrop/?width=380&height=209.5&position=2')}}" title="">
+                   <?php  
+                if(App\Gallery::getImagePosition('2'))
+                    echo "<img src='".App\Gallery::getImagePosition('2')."' width='380' height='209.5' >";
+                else 
+                    echo "<img src='https://dummyimage.com/380x209/000/fff' width='380' height='209.5'>";
+                ;?>
+                <i class="fas-upload"></i>
+            </a>
         </div>
     </div>
+    <div class="col-sm-4 mix">
+        <div class="item ">
+            <a href="{{url('toCrop/?width=380&height=418.2&position=3')}}" title="">
+                <?php  
+                if(App\Gallery::getImagePosition('3'))
+                    echo "<img src='".App\Gallery::getImagePosition('3')."' width='380' height='418.2'>";
+                else 
+                    echo "<img src='https://dummyimage.com/380x418.2/807680/fff' width='380' height='418.2'>";
+                ;?>
+                <i class="fas-upload"></i>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-4 mix">
+        <div class="item ">
+            <a href="{{url('toCrop/?width=380&height=209&position=4')}}" title="">
+                <?php  
+                if(App\Gallery::getImagePosition('4'))
+                    echo "<img src='".App\Gallery::getImagePosition('4')."' width='380' height='209.5'>";
+                else 
+                    echo " <img src='https://dummyimage.com/380x209/000/fff'width='380' height='209.5'>";
+                ;?>
+                <i class="fas-upload"></i>
+            </a>
+        </div>
+        <div class="item ">
+            <a href="{{url('toCrop/?width=380&height=209&position=5')}}" title="">
+                 <?php  
+                if(App\Gallery::getImagePosition('5'))
+                    echo "<img src='".App\Gallery::getImagePosition('5')."' width='380' height='209.5'>";
+                else 
+                    echo "<img src='https://dummyimage.com/380x209/000/fff' width='380' height='209.5'>";
+                ;?>
+                
+                <i class="fas-upload"></i>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-6 mix">
+        <div class="item ">
+            <a href="{{url('toCrop/?width=570&height=313.5&position=6')}}" title="">
+                 <?php  
+                if(App\Gallery::getImagePosition('6'))
+                    echo "<img src='".App\Gallery::getImagePosition('6')."' width='570' height='313.5' >";
+                else 
+                    echo "<img src='https://dummyimage.com/570x313.5/ebc3eb/000000' width='570' height='313.5' >";
+                ;?>
+                
+                <i class="fas fa-upload"></i>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-6 mix">
+        <div class="item ">
+            <a href="{{url('toCrop/?width=570&height=313.5&position=7')}}" title="">
+                 <?php  
+                if(App\Gallery::getImagePosition('7'))
+                    echo "<img src='".App\Gallery::getImagePosition('7')."' width='570' height='313.5' >";
+                else 
+                    echo "<img src='https://dummyimage.com/570x313.5/ebc3eb/000000'width='570' height='313.5'>";
+                ;?>
+                
+                <i class="fas-upload"></i>
+            </a>
+        </div>
+    </div>
+</div>
+</div>
 </section>
 
 
@@ -139,8 +177,8 @@
         enableExif: true,
         enableOrientation: true,
         viewport: { // Default { width: 100, height: 100, type: 'square' }
-            width: 200,
-            height: 200,
+        width: 200,
+        height: 200,
             // type: 'circle' //square
         },
         boundary: {

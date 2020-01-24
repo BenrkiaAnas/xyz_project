@@ -120,7 +120,7 @@ class GaleryController extends Controller
         $path = public_path('img/'). $image_name;
         file_put_contents($path, $data);
         //DAO
-        DB::table('gallerys')->insert(
+       $gallery=DB::table('gallerys')->insert(
             [  
                 'image' =>$image_name,
                 'lieu' =>$lieu,
@@ -128,8 +128,13 @@ class GaleryController extends Controller
                 'position'=>$position,
                 'date'=>$date]
         );
-
-
+       $list_galleries=Gallery::all();
+       if($list_galleries==null)
+       {
+        $list_galleries= array();
+        return view('back.view_crop',compact('list_galleries'));
+       }
+      return view('back.view_crop',compact('list_galleries'));
     }
 
 }

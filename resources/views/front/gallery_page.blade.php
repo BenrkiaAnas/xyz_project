@@ -67,13 +67,13 @@
                 <div class="col-sm-4 mix">
                     <div class="item port-popup">
                         <a href="{{App\Gallery::getImagePosition('1')}}" title="">
-                        <img src="{{App\Gallery::getImagePosition('1')}}" alt="">
+                        <img src="{{App\Gallery::getImagePosition('1')}}" width='380' height='209.5' alt="">
                             <i class="fa fa-search"></i>
                         </a>
                     </div>
                     <div class="item port-popup">
-                        <a href="{{App\Gallery::getImagePosition('2')}}" title="">
-                            <img src="{{App\Gallery::getImagePosition('2')}}" alt="">
+                        <a href="{{App\Gallery::getImagePosition('2')}}"  title="">
+                            <img src="{{App\Gallery::getImagePosition('2')}}" width='380' height='209.5' alt="">
                             <i class="fa fa-search"></i>
                         </a>
                     </div>
@@ -81,7 +81,7 @@
                 <div class="col-sm-4 mix">
                     <div class="item port-popup">
                         <a href="{{App\Gallery::getImagePosition('3')}}" title="">
-                            <img src="{{App\Gallery::getImagePosition('3')}}" alt="">
+                            <img src="{{App\Gallery::getImagePosition('3')}}" width='380' height='418.2' alt="">
                             <i class="fa fa-search"></i>
                         </a>
                     </div>
@@ -89,13 +89,13 @@
                 <div class="col-sm-4 mix">
                     <div class="item port-popup">
                         <a href="{{App\Gallery::getImagePosition('4')}}" title="">
-                            <img src="{{App\Gallery::getImagePosition('4')}}" alt="">
+                            <img src="{{App\Gallery::getImagePosition('4')}}" width="380" height="209.5" alt="">
                             <i class="fa fa-search"></i>
                         </a>
                     </div>
                     <div class="item port-popup">
                         <a href="{{App\Gallery::getImagePosition('5')}}" title="">
-                            <img src="{{App\Gallery::getImagePosition('5')}}" alt="">
+                            <img src="{{App\Gallery::getImagePosition('5')}}" width="380" height="209.5" alt="">
                             <i class="fa fa-search"></i>
                         </a>
                     </div>
@@ -103,7 +103,7 @@
                 <div class="col-sm-6 mix">
                     <div class="item port-popup">
                         <a href="{{App\Gallery::getImagePosition('6')}}" title="">
-                            <img src="{{App\Gallery::getImagePosition('6')}}" alt="">
+                            <img src="{{App\Gallery::getImagePosition('6')}}" width="570" height="313.5" alt="">
                             <i class="fa fa-search"></i>
                         </a>
                     </div>
@@ -111,7 +111,7 @@
                 <div class="col-sm-6 mix">
                     <div class="item port-popup">
                         <a href="{{App\Gallery::getImagePosition('7')}}" title="">
-                            <img src="{{App\Gallery::getImagePosition('7')}}" alt="">
+                            <img src="{{App\Gallery::getImagePosition('7')}}" width="570" height="313.5" alt="">
                             <i class="fa fa-search"></i>
                         </a>
                     </div>

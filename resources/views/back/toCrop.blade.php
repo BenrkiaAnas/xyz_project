@@ -129,7 +129,20 @@ upload.addEventListener('change', (e) => {
         save.classList.remove('hide');
         options.classList.remove('hide');
         // init cropper
-        cropper = new Cropper(img);
+        cropper = new Cropper(img, {
+        dragMode: 'move',
+        aspectRatio: 16 / 9,
+        autoCropArea: 0.65,
+        restore: false,
+        guides: false,
+        center: true,
+        highlight: true,
+        cropBoxMovable: false,
+        cropBoxResizable: false,
+        toggleDragModeOnDblclick: false,
+      });
+
+
       }
     };
     reader.readAsDataURL(e.target.files[0]);
@@ -141,7 +154,8 @@ save.addEventListener('click',(e)=>{
   e.preventDefault();
   // get result to data uri
   let imgSrc = cropper.getCroppedCanvas({
-    width: img_w.value // input value
+    width: img_w.value,
+    height:img_h.value // input value
   }).toDataURL();
   // remove hide class of img
   cropped.classList.remove('hide');
