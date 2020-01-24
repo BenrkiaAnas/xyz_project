@@ -72,3 +72,5 @@ Route::get('gdetails',function(){
 });
 Route::post('create/gallery','GaleryController@create');
 Route::get('gallery/list','GaleryController@getGallery');
+Route::get('/toCrop/','GaleryController@toCrop');
+Route::post('image/gallery','GaleryController@storeImage');

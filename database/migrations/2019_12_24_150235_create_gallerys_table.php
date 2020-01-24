@@ -17,7 +17,8 @@ class CreateGallerysTable extends Migration
             $table->increments('id');
             $table->longText('lieu');
             $table->longText('description');
-            $table->longText('lieudetail');
+            $table->dateTime('date');
+            $table->integer('position');
         });
     }
 
