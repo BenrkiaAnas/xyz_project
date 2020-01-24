@@ -4209,3 +4209,13 @@ html{
 {
     direction: initial;
 }
+/* Display Images Element */
+.display_imgs
+{
+    display: block ruby !important;
+}
+.display_element_imgs
+{
+    display: flex;
+    flex-direction: row-reverse;
+}

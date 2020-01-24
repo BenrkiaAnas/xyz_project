@@ -77,7 +77,7 @@
                         </div>
 
                     </div>
-                    <div class="col-xs-12">
+                    <div class="col-12 lorem_style">
                         <div class="about-form">
                             <div class="col-sm-9">
                                 <div class="about-sch-form">
@@ -277,7 +277,7 @@
 
     <!--* Fun And Facts*-->
     <section id="mt_fun" class="about-pg-mt section-inner">
-        <div class="container">
+        <div class="container put_element_left">
             <div class="mt-statts">
                 <div class="inner-heading">
                     <h3>{{__("POURQUOI NOUS CHOISIR")}}</h3>

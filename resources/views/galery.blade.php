@@ -32,8 +32,8 @@
 				<input type="file" onchange="onChangeImage(event,2,'btn_3',570,313.5)">
 				<button id="btn_3" class="btn btn-success upload-result_2" style="display:none">Apercu</button>
 				<br/>
-				
-				
+
+
 	  		</div>
 
 			  380 418.2
@@ -76,7 +76,7 @@ function uploadDemo(id,width,height)
 });
 console.log(width);
 }
-//e for event 
+//e for event
 //i to increment the id
 //width height to crop
 function onChangeImage(e,i,id,width,height)

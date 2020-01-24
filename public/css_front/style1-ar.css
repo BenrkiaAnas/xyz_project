@@ -149,7 +149,7 @@ color: #2a2f52;
 .mt_btn_yellow:after {
     border-color: rgb(255, 172, 0);
 }
-.about-form .col-sm-9,.about-form .col-sm-3{float:left}
+.about-form .col-sm-9,.about-form .col-sm-3{float:right}
 .panel-grid-banner {
     position: relative;
     z-index: 2;
@@ -705,4 +705,12 @@ font-family: 'Poppins', sans-serif;
 .white_p
 {
     color: #fff;
+}
+.lorem_style
+{
+    text-align: initial;
+}
+.put_element_left
+{
+    text-align: initial;
 }

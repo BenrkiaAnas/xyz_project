@@ -23,7 +23,7 @@ class GaleryController extends Controller
      */
     public function imageCrop()
     {
-        return view('back.test');
+        return view('back.galery');
     }
 
     public function imageCropPost(Request $request)
