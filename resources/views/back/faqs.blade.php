@@ -17,11 +17,13 @@
                   </tr>
                 </thead>
                 <tbody>
+
                     @foreach ($faqs as $faq )
-                    <tr> 
+                    <tr>
+
                             <td data-toggle="tooltip" title="{{$faq['question']['fr']}}">{{str_limit($faq['question']['fr'],15,'...')}}</td>
                             <td data-toggle="tooltip" title="{{$faq['reponse']['fr']}}">{{str_limit($faq['reponse']['fr'],15,'...')}}</td>
-                            <td data-toggle="tooltip" title="{{$faq['question']['ar']}}">{{str_limit($faq['question']['ar'],15,'...')}}.</td>
+                            <td data-toggle="tooltip" title="{{$faq['question']['ar']}}">{{str_limit($faq['question']['ar'],15,'...')}}</td>
                             <td data-toggle="tooltip" title="{{$faq['reponse']['ar']}}">{{str_limit($faq['reponse']['ar'],15,'...')}}</td>
                             <td  style="text-align: center" id="td_{{$faq['id']}}">
                               @if($faq['status']==0)
