@@ -131,15 +131,15 @@ upload.addEventListener('change', (e) => {
         // init cropper
         cropper = new Cropper(img, {
         dragMode: 'move',
-        aspectRatio: 16 / 9,
-        autoCropArea: 0.65,
+
+
         restore: false,
         guides: false,
         center: true,
         highlight: true,
-        cropBoxMovable: false,
-        cropBoxResizable: false,
-        toggleDragModeOnDblclick: false,
+        cropBoxMovable: true,
+        cropBoxResizable: true,
+
       });
 
 
