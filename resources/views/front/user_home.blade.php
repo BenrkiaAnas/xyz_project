@@ -416,35 +416,20 @@
             <h3 class="invisible">hidden</h3>
             <div class="row">
                 <div class="col-md-12 col-sm-12">
+
                     <div id="partners-slider" class="owl-carousel">
                         <div class="item">
-                            <div class="logo-item"> <img alt="" src="images/logo-1.png"></div>
+                            <div class="logo-item"> <img src="{{asset('img/logo-alsa.png')}}" alt="logo"></div>
                         </div>
                         <div class="item">
-                            <div class="logo-item"><img alt="" src="images/logo-2.png"></div>
+                            <div class="logo-item"> <img src="{{asset('img/Ministére.png')}}" alt="logo"></div>
                         </div>
                         <div class="item">
-                            <div class="logo-item"><img alt="" src="images/logo-3.png"></div>
+                            <div class="logo-item"><img src="{{asset('img/iniatiative.png')}}" alt="logo"></div>
                         </div>
                         <div class="item">
-                            <div class="logo-item"> <img alt="" src="images/logo-1.png"></div>
+                            <div class="logo-item"><img src="{{asset('img/comité.png')}}" alt="logo"></div>
                         </div>
-                        <div class="item">
-                            <div class="logo-item"><img alt="" src="images/logo-2.png"></div>
-                        </div>
-                        <div class="item">
-                            <div class="logo-item"><img alt="" src="images/logo-3.png"></div>
-                        </div>
-                        <div class="item">
-                            <div class="logo-item"> <img alt="" src="images/logo-1.png"></div>
-                        </div>
-                        <div class="item">
-                            <div class="logo-item"><img alt="" src="images/logo-2.png"></div>
-                        </div>
-                        <div class="item">
-                            <div class="logo-item"><img alt="" src="images/logo-3.png"></div>
-                        </div>
-
                     </div>
                 </div>
             </div>

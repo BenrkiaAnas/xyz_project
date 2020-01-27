@@ -1,21 +1,11 @@
 <!-- header -->
 <header class="site-header transparent-sidemenu">
     <nav class="navbar navbar-expand-lg transparent-bg static-nav">
-        <div class="container display_imgs">
-            <div class="display_element_imgs">
-                <a class="navbar-brand " href="index.html" >
-                    <img src="{{asset('img/logo-alsa.png')}}" alt="logo">
+        <div class="container">
+                <a class="navbar-brand left-image" href="index.html" >
+                    <img src="images/logo-transparent.png" alt="logo">
                 </a>
-                <a class="navbar-brand" href="index.html">
-                    <img src="{{asset('img/Ministére.png')}}" alt="logo">
-                </a>
-                <a class="navbar-brand" href="index.html"  >
-                    <img src="{{asset('img/iniatiative.png')}}" alt="logo">
-                </a>
-                <a class="navbar-brand " href="index.html"  >
-                    <img src="{{asset('img/comité.png')}}" alt="logo">
-                </a>
-            </div>
+
             <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#xenav">
                 <span> </span>
                 <span> </span>

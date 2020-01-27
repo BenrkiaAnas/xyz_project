@@ -67,7 +67,7 @@
                                 <h3>{{__('A PROPOS DE NOUS')}}</h3>
                                 <h2 class="mar-0">{{__('Découvrir notre Centre')}}</h2>
                             </div>
-                            <p>{{__("Le Projet d’Education à la Sécurité Routière, en partenariat avec l’Académie Régionale d’Education et de Formation et La Délégation Régionale de Marrakech, intègre l’Enseignement, l'éducation et les résolutions en matière de la sécurité routière aux enfants de sexe masculin et féminin de 10 à 13 ans à Marrakech (Maroc).")}}</p>
+                            <p>{!!__("Le Projet d’Education à la Sécurité Routière, en partenariat avec l’Académie Régionale d’Education et de Formation et La Délégation Régionale de Marrakech, intègre l’Enseignement, l'éducation et les résolutions en matière de la sécurité routière aux enfants de sexe masculin et féminin de 10 à 13 ans à Marrakech (Maroc).")!!}</p>
                             </p>
                         </div>
                     </div>
