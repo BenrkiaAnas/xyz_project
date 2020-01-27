@@ -16,7 +16,7 @@
                     else 
                         echo "<img src='https://dummyimage.com/380x209/000/fff'width='380' height='209.5' >";
                     ;?>
-                    <i class="fas-upload"></i>   
+                       
                 </a>
             </div>
             <div class="item ">
@@ -27,7 +27,7 @@
                 else 
                     echo "<img src='https://dummyimage.com/380x209/000/fff' width='380' height='209.5'>";
                 ;?>
-                <i class="fas-upload"></i>
+                
             </a>
         </div>
     </div>
@@ -40,7 +40,7 @@
                 else 
                     echo "<img src='https://dummyimage.com/380x418.2/807680/fff' width='380' height='418.2'>";
                 ;?>
-                <i class="fas-upload"></i>
+                
             </a>
         </div>
     </div>
@@ -53,7 +53,7 @@
                 else 
                     echo " <img src='https://dummyimage.com/380x209/000/fff'width='380' height='209.5'>";
                 ;?>
-                <i class="fas-upload"></i>
+                
             </a>
         </div>
         <div class="item ">
@@ -65,7 +65,7 @@
                     echo "<img src='https://dummyimage.com/380x209/000/fff' width='380' height='209.5'>";
                 ;?>
                 
-                <i class="fas-upload"></i>
+                
             </a>
         </div>
     </div>
@@ -79,7 +79,6 @@
                     echo "<img src='https://dummyimage.com/570x313.5/ebc3eb/000000' width='570' height='313.5' >";
                 ;?>
                 
-                <i class="fas fa-upload"></i>
             </a>
         </div>
     </div>
@@ -93,7 +92,7 @@
                     echo "<img src='https://dummyimage.com/570x313.5/ebc3eb/000000'width='570' height='313.5'>";
                 ;?>
                 
-                <i class="fas-upload"></i>
+                
             </a>
         </div>
     </div>
