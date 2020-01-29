@@ -397,7 +397,8 @@
     <script src="{{asset('js_front/functions.js')}}"></script>
     <!-- Fancybox jquery --><script src="{{asset('js_front/new/jquery.fancybox.pack.js')}}"></script>
     <!-- Navigation jquery --><script src="{{asset('js_back/new/jquery.nav.js')}}"></script>
-    <!-- Slick jquery --><script type='text/javascript' src="{{asset('js_back/new/slick.js')}}"></script>
+    <!-- Slick jquery --><script src="{{asset('js_front/new/slick.js')}}"></script>
+
 
 
     <script>

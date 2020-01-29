@@ -8,25 +8,30 @@ use App\Gallery;
 use DB;
 class GaleryController extends Controller
 {
-    public function tester(Request $request)
-    {
-        echo 'hahwa '.$request->tab;exit;
+  public function __construct()
+  {
+    $this->middleware('auth');
+}
+public function tester(Request $request)
+{
+    echo 'hahwa '.$request->tab;exit;
 
-        echo "limage ".$request->tab;exit;
-        return 1;
-    }
+    echo "limage ".$request->tab;exit;
+    return 1;
+}
 
 /**
      * Show the application dashboard.
      *
      * @return \Illuminate\Http\Response
      */
+
     public function imageCrop()
     {
         return view('back.view_crop');
     }
 
-    public function imageCropPost(Request $request)
+public function imageCropPost(Request $request)
     {
 
         $datas = $request->dataSrc;
@@ -51,8 +56,7 @@ class GaleryController extends Controller
         return view('back.gdetails',['images'=>$table_images]);
 
     }
-
-    public function create(Request $request){
+  public function create(Request $request){
         $data=$request->data;
         $i=1;
         foreach($data as $dt)
