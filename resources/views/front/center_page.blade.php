@@ -308,7 +308,7 @@
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <div class="nets-facts">
-                            <h2>Faites un Tour </h2>
+                            <h2>{{__("Faites un Tour")}}</h2>
                             <div class="pulses">
                                 <button type="button" class="play-btn js-video-button" data-video-id='176543782' data-channel="vimeo"><i class="fa fa-play"></i></button>
                             </div>

@@ -332,7 +332,7 @@
                                 </div>
                                 <div class="team-content gradient_bg whitecolor">
                                     <h3>Mourad Ihssane</h3>
-                                    <p >Signalisation</p> <br><br>
+                                    <p class="white_p">Signalisation</p> <br><br>
                                     <div class="progress-bars ">
                                         <p class="white_p">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
                                     </div>
@@ -346,7 +346,7 @@
                                 </div>
                                 <div class="team-content gradient_bg whitecolor">
                                     <h3>Ilham Samir</h3>
-                                    <p >Signalisation</p> <br><br>
+                                    <p class="white_p">Signalisation</p> <br><br>
                                     <div class="progress-bars ">
                                         <p class="white_p" >Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
                                     </div>
@@ -361,7 +361,7 @@
                                 </div>
                                 <div class="team-content gradient_bg whitecolor">
                                     <h3>Amal Mahjoubi</h3>
-                                    <p >Signalisation</p> <br><br>
+                                    <p class="white_p">Signalisation</p> <br><br>
                                     <div class="progress-bars ">
                                         <p  class="white_p">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
                                     </div>
