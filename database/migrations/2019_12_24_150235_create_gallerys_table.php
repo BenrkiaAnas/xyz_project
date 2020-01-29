@@ -15,9 +15,11 @@ class CreateGallerysTable extends Migration
     {
         Schema::create('gallerys', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('image');
             $table->longText('lieu');
             $table->longText('description');
-            $table->longText('lieudetail');
+            $table->dateTime('date');
+            $table->integer('position');
         });
     }
 

@@ -37,7 +37,7 @@
 
 
     <div class="row">
-        <img style="width: 100% " alt="video img" src="images/slide-4.jpg">
+        <img style="width: 100% " alt="video img" src="{{asset('images/slide-4.jpg')}}">
     </div>
 
 
@@ -67,7 +67,7 @@
                                 <h3>{{__('A PROPOS DE NOUS')}}</h3>
                                 <h2 class="mar-0">{{__('Découvrir notre Centre')}}</h2>
                             </div>
-                            <p>Lorem ipsum gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh  id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt  mauris. <br><br>Auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet . Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt  mauris.
+                            <p>{!!__("Le Projet d’Education à la Sécurité Routière, en partenariat avec l’Académie Régionale d’Education et de Formation et La Délégation Régionale de Marrakech, intègre l’Enseignement, l'éducation et les résolutions en matière de la sécurité routière aux enfants de sexe masculin et féminin de 10 à 13 ans à Marrakech (Maroc).")!!}</p>
                             </p>
                         </div>
                     </div>
@@ -77,21 +77,17 @@
                         </div>
 
                     </div>
-                    <div class="col-xs-12">
+                    <div class="col-12 lorem_style">
                         <div class="about-form">
                             <div class="col-sm-9">
                                 <div class="about-sch-form">
                                     <div class="event-title">
-                                        <h2>Lorem ipsum gravida nibh </h2>
-                                        <p class="white">Lorem ipsum gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh  id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt  mauris.</p>
+                                        <h2>{{__("L’Education à la Sécurité Routière")}}</h2>
+                                        <p class="white">{{__("Connaitre les mesures de sécurité à prendre, la distance de sécurité pour voitures et vélos, les limites de vitesses pour les véhicules et d'autres informations utiles pour l’appliquer à la vie quotidienne.")}}</p>
                                     </div> <!-- event title -->
                                 </div>
                             </div>
-                            <div class="col-sm-3">
-                                <div class="smt-items mar-top-70">
-                                    <a class="mt_btn_yellow" href="">Découvrir</a>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -108,11 +104,10 @@
                     <div class="inner-grid text-end">
                         <div class="text-courses">
                             <i class="fa fa-laptop"></i>
-                            <h3>{{__('Cours en Lignes')}}</h3>
+                            <h3>{{__("Cours")}}</h3>
                         </div>
                         <div class="courses-content">
-                            <p>Auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet</p>
-                            <a href="#" class="mt_btn_yellow">{{__('Lire Plus')}}</a>
+                            <p>{!! __("L’éducation scolaire comprend <strong>la Théorie</strong> dans laquelle les enfants reçoivent une formation en classe dispensée par une équipe d’enseignants qualifiés en sécurité Routière, et <strong>la Pratique</strong> en montant le vélo, en conduisant les karts et en marchant en tant que piéton grâce au projet intitulé <strong>« Se déplacer en toute sécurité »</strong>.") !!}</p>
                         </div>
                     </div>
                 </div>
@@ -120,11 +115,10 @@
                     <div class="inner-grid text-end">
                         <div class="text-courses">
                             <i class="fa fa-users"></i>
-                            <h3>{{__('Enseignants Qualifiés')}}</h3>
+                            <h3>{{__("Enseignants Qualifiés")}}</h3>
                         </div>
                         <div class="courses-content">
-                            <p>Auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet</p>
-                            <a href="#" class="mt_btn_yellow">{{__('Lire Plus')}}</a>
+                            <p>{{__("Les formateurs accrédités sont recrutés par le service des ressources humaines d'Alsa et possèdent une grande expérience en matière d'Education à la Sécurité Routière, d'Education et de Formation routières.")}}</p>
                         </div>
                     </div>
                 </div>
@@ -132,11 +126,10 @@
                     <div class="inner-grid text-end">
                         <div class="text-courses">
                             <i class="fa fa-book"></i>
-                            <h3>{{__('Bibliothèque et magasins')}}</h3>
+                            <h3>{{__('Matériel Scolaire')}}</h3>
                         </div>
                         <div class="courses-content">
-                            <p>Auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet</p>
-                            <a href="#" class="mt_btn_yellow">{{__('Lire Plus')}}</a>
+                            <p>{{__("Les élèves des écoles publiques ou privées peuvent bénéficier de l'Education à la Sécurité Routière par le biais d’équipements scolaires disponibles, tels que les salles de classe et le circuit, à la demande de centres accrédités par l'Académie et la Délégation Régionale pour l'éducation de Marrakech, conformément au programme scolaire élaboré dans ce cadre.")}}</p>
                         </div>
                     </div>
                 </div>
@@ -155,14 +148,24 @@
                             <h3>{{__('MISSION')}}</h3>
                             <h2>{{__('Notre vision du Centre')}}</h2>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><br>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>{{__("L’institut de Sécurité a pour objectif d’enseigner le code de la route et les règles de la sécurité sur la route afin de réduire le taux d’accidents. En outre, l’éducation sur la route est un outil essentiel pour assurer la sécurité sur la route et l’enseigner aux enfants depuis leur enfance.")}}</p><br>
+                        <p>{{__("Créer de bonnes habitudes et d'enseigner les attitudes et comportements appropriés à la vie quotidienne sur les routes.")}}</p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-6 col-xs-12">
                     <div class="mission-progress-bar">
                         <div class="progress-wrap">
-                            <h5>{{__('Résultats Connus')}}</h5>
+                            <h5>{{__('Première proposition pédagogique en sécurité')}}</h5>
+                            <div class="progress">
+                                <div class="progress-bar  color1" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                    <span class="bar-width">100%</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="progress-wrap">
+                            <h5>{{__("Une Activité complète très efficace et stimulante")}}</h5>
                             <div class="progress">
                                 <div class="progress-bar  color1" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
                                     <span class="bar-width">95%</span>
@@ -172,41 +175,31 @@
                         </div>
 
                         <div class="progress-wrap">
-                            <h5>{{__('Étude de Marché')}}</h5>
-                            <div class="progress">
-                                <div class="progress-bar  color1" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                                    <span class="bar-width">60%</span>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="progress-wrap">
                             <h5>
-                                {{__('Conseil Stratégique')}}</h5>
+                                {{__("Comprendre et assimiler l'importance d'aider les autres")}}</h5>
                             <div class="progress">
-                                <div class="progress-bar  color1" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                                    <span class="bar-width">90%</span>
+                                <div class="progress-bar  color1" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                    <span class="bar-width">95%</span>
                                 </div>
 
                             </div>
                         </div>
 
                         <div class="progress-wrap">
-                            <h5>{{__('Enseignement Numérique')}}</h5>
+                            <h5>{{__("Améliorer l’estime de soi et consolider la prise de décision")}}</h5>
                             <div class="progress">
-                                <div class="progress-bar  color1" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                    <span class="bar-width">75%</span>
+                                <div class="progress-bar  color1" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                    <span class="bar-width">95%</span>
                                 </div>
 
                             </div>
                         </div>
 
                         <div class="progress-wrap">
-                            <h5>{{__('Online Reputation')}}</h5>
+                            <h5>{{__("Améliorer les techniques de travail coopératif")}}</h5>
                             <div class="progress">
-                                <div class="progress-bar  color1" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                                    <span class="bar-width">80%</span>
+                                <div class="progress-bar  color1" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                    <span class="bar-width">95%</span>
                                 </div>
                             </div>
                         </div>
@@ -228,7 +221,7 @@
                         <h2 class="white">{{__('Voir ce que nos étudiants ont à dire')}}
                         </h2>
                         <div class="testimonial-abt">
-                            <p class="white">Lorem ipsums dolors sit amet consectetur adipiselo elit sed do eiused tempor the incididunt ut labore et. Auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet . Morbi accumsan ipsum velit.</p>
+                            <p class="white">{{__("Les élèves acquis à l'établissement ont fait preuve d'une immense satisfaction et étaient fiers de devenir des ambassadeurs de la sécurité dont la mission était de sensibiliser leurs familles et leur entourage.")}}</p>
                         </div>
                     </div>
                 </div>
@@ -242,7 +235,7 @@
                                         <a href="#" class="text-uppercase"> Adam Sami</a>
                                         <span>Signalisation</span>
                                     </h4>
-                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p>
+                                    <p>{{__("Témoignage J’ai appris connaissance des types de transport que nous pouvons utiliser pour la mobilité : en tant qu’individus et en tant que groupes.")}}</p>
 
                                 </div>
                             </div>
@@ -256,7 +249,7 @@
                                         <a href="#" class="text-uppercase">Noura Fathi</a>
                                         <span>Signalisation</span>
                                     </h4>
-                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p>
+                                    <p>{{__("J’ai appris comment voyager en transport en commun, comment et où les chauffeurs conduisent et ce que devraient faire pour aller en toute sécurité.")}}</p>
 
                                 </div>
                             </div>
@@ -270,7 +263,7 @@
                                         <a href="#" class="text-uppercase">Imane Mamou</a>
                                         <span>Signalisation</span>
                                     </h4>
-                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p>
+                                    <p>{{__("J’apprends à réagir de manière adéquate et en toute sécurité sur la voie publique.")}}</p>
 
                                 </div>
                             </div>
@@ -284,30 +277,32 @@
 
     <!--* Fun And Facts*-->
     <section id="mt_fun" class="about-pg-mt section-inner">
-        <div class="container">
+        <div class="container put_element_left">
             <div class="mt-statts">
                 <div class="inner-heading">
-                    <h3>POURQUOI NOUS CHOISIR</h3>
-                    <h2>Différents cours au choix
+                    <h3>{{__("POURQUOI NOUS CHOISIR")}}</h3>
+                    <h2>{{__("Prestations")}}
                     </h2>
+                    <p>{!!__("Le projet d’éducation à la sécurité routière vous apporte les meilleures solutions adaptées <br> à vos besoins en matière de sécurité et considère votre satisfaction comme sa grande priorité.")!!}</p>
                 </div>
+
                 <div class="row facts_row">
                     <div class="col-md-8 col-sm-8 col-xs-12 facts_col">
                         <div class="fun-facts-main">
                             <div class="fun-facts_wrapper">
                                 <i class="fa fa-trophy"></i>
                                 <p class="fun-facts_figure timer" data-to="275" data-speed="3000"></p>
-                                <span class="fun-facts_title"> PRIX </span>
+                                <span class="fun-facts_title"> {{__("FORMATEURS")}} </span>
                             </div>
                             <div class="fun-facts_wrapper">
                                 <i class="fa fa-graduation-cap"></i>
                                 <p class="fun-facts_figure timer" data-to="3282" data-speed="3000"></p>
-                                <span class="fun-facts_title"> ÉLÈVES</span>
+                                <span class="fun-facts_title"> {{__("ÉLÈVES")}}</span>
                             </div>
                             <div class="fun-facts_wrapper">
                                 <i class="fa fa-university"></i>
                                 <p class="fun-facts_figure timer" data-to="120" data-speed="3000"></p>
-                                <span class="fun-facts_title"> ANS D'HISTOIRE</span>
+                                <span class="fun-facts_title"> {{__("ETABLISSEMENTS")}}</span>
                             </div>
                         </div>
                     </div>
@@ -403,6 +398,7 @@
     <!-- Fancybox jquery --><script src="{{asset('js_front/new/jquery.fancybox.pack.js')}}"></script>
     <!-- Navigation jquery --><script src="{{asset('js_back/new/jquery.nav.js')}}"></script>
     <!-- Slick jquery --><script src="{{asset('js_front/new/slick.js')}}"></script>
+
 
 
     <script>

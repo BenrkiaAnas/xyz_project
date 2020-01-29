@@ -14,6 +14,7 @@ class Gallery extends Model
         'description',
         'image',
         'position',
+        'date',
     ];
 
     public static function getImagePosition($position){
@@ -23,8 +24,8 @@ class Gallery extends Model
         return asset('img/'.$object->image);
        }
        else {
-        $object=new Gallery();
-        return asset('img/'.$object->image);
+       
+        return null;
        }
        
 

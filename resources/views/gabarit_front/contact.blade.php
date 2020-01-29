@@ -6,22 +6,22 @@
                 <div class="col-md-12 col-sm-12">
                     <div class="heading-title heading_space wow fadeInUp  text-end" data-wow-delay="300ms">
                         <span>{{__('CONTACT')}}</span>
-                        <h2 class="darkcolor">{{__('Laissez Nous Un Message')}}</h2>
+                        <h2 class="darkcolor">{{__('Laissez-Nous Un Message')}}</h2>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 margin_bottom wow fadeInUp  text-end" data-wow-delay="350ms">
-                    <p>West is not just about graphic design; it's more than that. We offer integral communication services, and we're responsible for our process and results. We thank each client and their projects.</p>
+                    <p>{{__("Notre équipe est toujours disponible pour recevoir toute demande de renseignement ou commentaire. N'hésitez pas SVP de nous envoyer un message à partir du formulaire ci-dessous, nous vous contacterons dès que possible.")}}</p>
                     <div class="row">
                         <div class="col-md-6 col-sm-6 our-address top40">
-                            <h4 class="pickus" href="#." data-text="Notre Addresse">{{__('Notre Addresse')}}</h4>
-                            <p class="bottom15"><p>Ferme Ahzib Achayech <br> Ferket Ain Dada <br>Askejour - Saada/ Marrakech </p>
+                            <h4 class="" style="color: #fec401" href="#." data-text="Notre Addresse">{{__('Notre Addresse')}}</h4>
+                            <p class="bottom15">{{__("Projet Education à la Sécurité Routière est situé à Marrakech, Avenue Abdellah Brahim - Annexe Administratif Bouâkkaz (Circuit de l’Ecole Abdelmalek Essaâdi)")}}</p>
 
                         </div>
                         <div class="col-md-6 col-sm-6 our-address top40">
-                            <h4 class="pickus" href="#." data-text="Appelez Nous">{{__('Appelez Nous')}}</h4>
-                            <p class="bottom15">05 24 33 52 70 /72  </p>
-                            <h4 class="pickus" href="#." data-text="Envoyez un Message">{{__('Envoyez un Message')}}</h4>
-                            <p class="bottom15">centre.securite@alsa.m</p>
+                            <h4 class="" style="color: #fec401" href="#." data-text="Appelez Nous">{{__('Appelez Nous')}}</h4>
+                            <p class="bottom15">{{__("05 25 09 30 20 / 05 25 09 30 21")}}</p>
+                            <h4 class="" style="color: #fec401" href="#." data-text="Envoyez un Message">{{__('Envoyez un Message')}}</h4>
+                            <p class="bottom15">centre.securite@alsa.ma</p>
 
                         </div>
                         <div class="col-md-6 col-sm-6 our-address top40">

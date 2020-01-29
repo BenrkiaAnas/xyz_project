@@ -60,7 +60,7 @@
     </div>
     <div class="box-2 img-result hide">
       <!-- result of crop -->
-      <img class="cropped" class="form-control" src="" alt="" name="cropped_image">
+      <img class="cropped" class="form-control" width="<?php echo $_GET['width'] ?>" height="<?php echo $_GET['height'] ?>" src="" alt="" name="cropped_image">
       <input  type="hidden" id="imagehidden" name="cropped_image">
       <input  type="hidden" value="<?php echo $_GET['position'] ?>" name="position">
     </div>
@@ -129,7 +129,20 @@ upload.addEventListener('change', (e) => {
         save.classList.remove('hide');
         options.classList.remove('hide');
         // init cropper
-        cropper = new Cropper(img);
+        cropper = new Cropper(img, {
+        dragMode: 'move',
+
+
+        restore: false,
+        guides: false,
+        center: true,
+        highlight: true,
+        cropBoxMovable: true,
+        cropBoxResizable: true,
+
+      });
+
+
       }
     };
     reader.readAsDataURL(e.target.files[0]);
@@ -141,7 +154,8 @@ save.addEventListener('click',(e)=>{
   e.preventDefault();
   // get result to data uri
   let imgSrc = cropper.getCroppedCanvas({
-    width: img_w.value // input value
+    width: img_w.value,
+    height:img_h.value // input value
   }).toDataURL();
   // remove hide class of img
   cropped.classList.remove('hide');

@@ -12,6 +12,9 @@
 */
 
 // Route Pages
+Route::match(['get', 'post'], 'register', function () {
+    return abort(404, 'Not Found');
+})->name('register');
 Route::get('/', function () {
     return view('front.user_home');
 })->name('home');
@@ -72,3 +75,13 @@ Route::get('gdetails',function(){
 });
 Route::post('create/gallery','GaleryController@create');
 Route::get('gallery/list','GaleryController@getGallery');
+Route::get('/toCrop/','GaleryController@toCrop');
+Route::post('image/gallery','GaleryController@storeImage');
+
+
+Route::get('/clear-cache', function() {
+    $exitCode = Artisan::call('config:clear');
+    $exitCode = Artisan::call('cache:clear');
+    $exitCode = Artisan::call('config:cache');
+    return 'DONE'; //Return anything
+});

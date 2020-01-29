@@ -35,7 +35,7 @@
     <title>ALSA</title>
 
     <!-- vendor css -->
-    <link rel="stylesheet" href="http://demo.itsolutionstuff.com/plugin/croppie.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cropper/2.3.4/cropper.min.css">
     <link href="{{ asset('lib/font-awesome/css/font-awesome.css') }}" rel="stylesheet">
     <link href="{{ asset('lib/Ionicons/css/ionicons.css') }}" rel="stylesheet">
     <link href="{{ asset('lib/perfect-scrollbar/css/perfect-scrollbar.css') }}" rel="stylesheet">
@@ -67,28 +67,28 @@
 </div><!-- am-mainpanel -->
 </body>
 
-    <script  src="{{asset('lib/jquery/jquery.js')}}"></script>
-    <script  src="{{asset('lib/popper.js/popper.js')}}"></script>
-    <script  src="{{asset('lib/bootstrap/bootstrap.js')}}"></script>
-    <script  src="{{asset('lib/jquery-ui/jquery-ui.js')}}"></script>
-    <script  src="{{asset('lib/perfect-scrollbar/js/perfect-scrollbar.jquery.js')}}"></script>
-    <script  src="{{asset('lib/jquery-toggles/toggles.min.js')}}"></script>
-    <script  src="{{asset('lib/highlightjs/highlight.pack.js')}}"></script>
-    <script  src="{{asset('lib/datatables/jquery.dataTables.js')}}"></script>
-    <script  src="{{asset('lib/datatables-responsive/dataTables.responsive.js')}}"></script>
+<script  src="{{asset('lib/jquery/jquery.js')}}"></script>
+<script  src="{{asset('lib/popper.js/popper.js')}}"></script>
+<script  src="{{asset('lib/bootstrap/bootstrap.js')}}"></script>
+<script  src="{{asset('lib/jquery-ui/jquery-ui.js')}}"></script>
+<script  src="{{asset('lib/perfect-scrollbar/js/perfect-scrollbar.jquery.js')}}"></script>
+<script  src="{{asset('lib/jquery-toggles/toggles.min.js')}}"></script>
+<script  src="{{asset('lib/highlightjs/highlight.pack.js')}}"></script>
+<script  src="{{asset('lib/datatables/jquery.dataTables.js')}}"></script>
+<script  src="{{asset('lib/datatables-responsive/dataTables.responsive.js')}}"></script>
 
-    <script  src="{{asset('js_back/amanda.js')}}"></script>
-    <script src="http://demo.itsolutionstuff.com/plugin/croppie.js"></script>
-    <script type="text/javascript">
-        $.ajaxSetup({
+<script  src="{{asset('js_back/amanda.js')}}"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/0.8.1/cropper.min.js"></script>
+<script type="text/javascript">
+    $.ajaxSetup({
         headers: {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         }
-        });
-        
-        function uploadDemo(id,width,height)
-        {
-            $uploadCrop = $('#upload-demo_'+id).croppie({
+    });
+
+    function uploadDemo(id,width,height)
+    {
+        $uploadCrop = $('#upload-demo_'+id).croppie({
             enableExif: false,
             viewport: {
                 width: width ,
@@ -101,135 +101,135 @@
             }
         });
         console.log(width);
-        }
-        //e for event 
-        //i to increment the id
-        //width height to crop
-        function onChangeImage(e,i,id,width,height)
-        {
-            var reader = new FileReader();
-        
-            alert(e)
-            console.log(e)
-            reader.onload = function (e) {
-                $uploadCrop.croppie('bind', {
-                    url: e.target.result
-                }).then(function(){
-                    console.log('jQuery bind complete');
-                });
-            }
-            reader.readAsDataURL(e.target.files[0]);
-            uploadDemo(i,width,height);
-            document.getElementById(id).style.display='block';
-            
-        }
-        
-        function uploadResult()
-        {
-          var table=new Array();
-          $('#this').html('@CSRF');  
-          $('img.image-cropped').each(function() {
-               src=$(this).attr('src');
-               $('#this').append('@CSRF<input type="hidden" value="'+src+'" name="dataSrc[]">');   
-               table.push(src);
-                 });
-                 console.log(table);
-          $('#this').submit(); 
+    }
+    //e for event
+    //i to increment the id
+    //width height to crop
+    function onChangeImage(e,i,id,width,height)
+    {
+        var reader = new FileReader();
 
+        alert(e)
+        console.log(e)
+        reader.onload = function (e) {
+            $uploadCrop.croppie('bind', {
+                url: e.target.result
+            }).then(function(){
+                console.log('jQuery bind complete');
+            });
         }
-        
-        
-        
-        $('.upload-result_0').on('click', function (ev) {
-            $uploadCrop.croppie('result', {
-                type: 'canvas',
-                size: 'viewport'
-            }).then(function (resp) {
-                html = '<img class="image-cropped" src="' + resp + '" name="tab[]"/>';
-                $("#upload-demo-i_"+0).html(html);
-            });
+        reader.readAsDataURL(e.target.files[0]);
+        uploadDemo(i,width,height);
+        document.getElementById(id).style.display='block';
+
+    }
+
+    function uploadResult()
+    {
+        var table=new Array();
+        $('#this').html('@CSRF');
+        $('img.image-cropped').each(function() {
+            src=$(this).attr('src');
+            $('#this').append('@CSRF<input type="hidden" value="'+src+'" name="dataSrc[]">');
+            table.push(src);
         });
-        $('.upload-result_1').on('click', function (ev) {
-            $uploadCrop.croppie('result', {
-                type: 'canvas',
-                size: 'viewport'
-            }).then(function (resp) {
-                html = '<img class="image-cropped" src="' + resp + '" name="tab[]"/>';
-                $("#upload-demo-i_"+1).html(html);
-            });
+        console.log(table);
+        $('#this').submit();
+
+    }
+
+
+
+    $('.upload-result_0').on('click', function (ev) {
+        $uploadCrop.croppie('result', {
+            type: 'canvas',
+            size: 'viewport'
+        }).then(function (resp) {
+            html = '<img class="image-cropped" src="' + resp + '" name="tab[]"/>';
+            $("#upload-demo-i_"+0).html(html);
         });
-        $('.upload-result_2').on('click', function (ev) {
-            $uploadCrop.croppie('result', {
-                type: 'canvas',
-                size: 'viewport'
-            }).then(function (resp) {
-                html = '<img class="image-cropped" src="' + resp + '" name="tab[]" />';
-                $("#upload-demo-i_"+2).html(html);
-            });
+    });
+    $('.upload-result_1').on('click', function (ev) {
+        $uploadCrop.croppie('result', {
+            type: 'canvas',
+            size: 'viewport'
+        }).then(function (resp) {
+            html = '<img class="image-cropped" src="' + resp + '" name="tab[]"/>';
+            $("#upload-demo-i_"+1).html(html);
         });
-        $('.upload-result_3').on('click', function (ev) {
-            $uploadCrop.croppie('result', {
-                type: 'canvas',
-                size: 'viewport'
-            }).then(function (resp) {
-                html = '<img class="image-cropped" src="' + resp + '" name="tab[]" />';
-                $("#upload-demo-i_"+3).html(html);
-            });
+    });
+    $('.upload-result_2').on('click', function (ev) {
+        $uploadCrop.croppie('result', {
+            type: 'canvas',
+            size: 'viewport'
+        }).then(function (resp) {
+            html = '<img class="image-cropped" src="' + resp + '" name="tab[]" />';
+            $("#upload-demo-i_"+2).html(html);
         });
-        $('.upload-result_4').on('click', function (ev) {
-            $uploadCrop.croppie('result', {
-                type: 'canvas',
-                size: 'viewport'
-            }).then(function (resp) {
-                html = '<img class="image-cropped" src="' + resp + '" name="tab[]"/>';
-                $("#upload-demo-i_"+4).html(html);
-            });
+    });
+    $('.upload-result_3').on('click', function (ev) {
+        $uploadCrop.croppie('result', {
+            type: 'canvas',
+            size: 'viewport'
+        }).then(function (resp) {
+            html = '<img class="image-cropped" src="' + resp + '" name="tab[]" />';
+            $("#upload-demo-i_"+3).html(html);
         });
-        $('.upload-result_5').on('click', function (ev) {
-            $uploadCrop.croppie('result', {
-                type: 'canvas',
-                size: 'viewport'
-            }).then(function (resp) {
-                html = '<img class="image-cropped" src="' + resp + '" name="tab[]"/>';
-                $("#upload-demo-i_"+5).html(html);
-            });
+    });
+    $('.upload-result_4').on('click', function (ev) {
+        $uploadCrop.croppie('result', {
+            type: 'canvas',
+            size: 'viewport'
+        }).then(function (resp) {
+            html = '<img class="image-cropped" src="' + resp + '" name="tab[]"/>';
+            $("#upload-demo-i_"+4).html(html);
         });
-        $('.upload-result_6').on('click', function (ev) {
-            $uploadCrop.croppie('result', {
-                type: 'canvas',
-                size: 'viewport'
-            }).then(function (resp) {
-                html = '<img class="image-cropped" src="' + resp + '" name="tab[]"/>';
-                $("#upload-demo-i_"+6).html(html);
-            });
+    });
+    $('.upload-result_5').on('click', function (ev) {
+        $uploadCrop.croppie('result', {
+            type: 'canvas',
+            size: 'viewport'
+        }).then(function (resp) {
+            html = '<img class="image-cropped" src="' + resp + '" name="tab[]"/>';
+            $("#upload-demo-i_"+5).html(html);
         });
-  
-      $(function(){
+    });
+    $('.upload-result_6').on('click', function (ev) {
+        $uploadCrop.croppie('result', {
+            type: 'canvas',
+            size: 'viewport'
+        }).then(function (resp) {
+            html = '<img class="image-cropped" src="' + resp + '" name="tab[]"/>';
+            $("#upload-demo-i_"+6).html(html);
+        });
+    });
+
+    $(function(){
         'use strict';
 
         $('#datatable1').DataTable({
-          responsive: true,
-          language: {
-            searchPlaceholder: '{{__("Rechercher")}} ...',
-            sSearch: '',
-            lengthMenu: '_MENU_ {{__("Éléments")}} / {{__("Page")}}',
-          }
+            responsive: true,
+            language: {
+                searchPlaceholder: '{{__("Rechercher")}} ...',
+                sSearch: '',
+                lengthMenu: '_MENU_ {{__("Éléments")}} / {{__("Page")}}',
+            }
         });
 
         $('#datatable2').DataTable({
-          bLengthChange: false,
-          searching: false,
-          responsive: true
+            bLengthChange: false,
+            searching: false,
+            responsive: true
         });
 
         // Select2
         $('.dataTables_length select').select2({ minimumResultsForSearch: Infinity });
 
-      });
+    });
 
-      /*those function related to view roles by @hamza*/
-      /*end section of @hamza*/
-      </script>
-      
+    /*those function related to view roles by @hamza*/
+    /*end section of @hamza*/
+</script>
+
 
 </html>
