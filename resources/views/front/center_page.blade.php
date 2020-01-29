@@ -225,7 +225,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6" style="direction: initial">
                     <div class="row slider-eductestimo">
                         <div class="col-sm-4">
                             <div class="item">
