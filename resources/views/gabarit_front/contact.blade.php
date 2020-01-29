@@ -6,7 +6,7 @@
                 <div class="col-md-12 col-sm-12">
                     <div class="heading-title heading_space wow fadeInUp  text-end" data-wow-delay="300ms">
                         <span>{{__('CONTACT')}}</span>
-                        <h2 class="darkcolor">{{__('Laissez Nous Un Message')}}</h2>
+                        <h2 class="darkcolor">{{__('Laissez-Nous Un Message')}}</h2>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 margin_bottom wow fadeInUp  text-end" data-wow-delay="350ms">

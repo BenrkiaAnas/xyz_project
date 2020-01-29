@@ -37,7 +37,7 @@
 
 
     <div class="row">
-        <img style="width: 100% " alt="video img" src="images/slide-4.jpg">
+        <img style="width: 100% " alt="video img" src="{{asset('images/slide-4.jpg')}}">
     </div>
 
 
@@ -397,7 +397,7 @@
     <script src="{{asset('js_front/functions.js')}}"></script>
     <!-- Fancybox jquery --><script src="{{asset('js_front/new/jquery.fancybox.pack.js')}}"></script>
     <!-- Navigation jquery --><script src="{{asset('js_back/new/jquery.nav.js')}}"></script>
-    <!-- Slick jquery --><script src="{{asset('js_back/new/slick.js')}}"></script>
+    <!-- Slick jquery --><script type='text/javascript' src="{{asset('js_back/new/slick.js')}}"></script>
 
 
     <script>

@@ -3834,11 +3834,7 @@ footer .copyrights > a:focus {
    width: 58px;
 }
 .loader span {
-   background: -webkit-linear-gradient(90deg, #fec401 31%, #1f2b4c 69%);
-   background: -webkit-gradient(linear, left top, right top, color-stop(31%, #fec401), color-stop(69%, #1f2b4c));
-   background: -webkit-linear-gradient(left, #fec401 31%, #1f2b4c 69%);
-   background: -o-linear-gradient(left, #fec401 31%, #1f2b4c 69%);
-   background: linear-gradient(90deg, #fec401 31%, #1f2b4c 69%);
+   background: #fec401;
    -webkit-border-radius: 50%;
    border-radius: 50%;
    display: block;

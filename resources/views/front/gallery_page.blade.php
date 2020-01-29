@@ -40,7 +40,7 @@
 
 
     <div class="row"  >
-        <img style="width: 100% " alt="video img" src="images/slide-1.jpg">
+        <img style="width: 100% " alt="video img" src="{{asset('images/slide-1.jpg')}}">
     </div>
 
 

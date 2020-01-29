@@ -135,7 +135,7 @@
                         <div class="service-box">
                             <span class="bottom25"><i class="fa fa-laptop"></i></span>
                             <h4 class="bottom10"><a href="javascript:void(0)">{{__('Changeons nos habitudes')}}</a></h4>
-                            <p class="white_p">{{__("Développer des comportements et des attitudes responsables, civiques et sécuritaires en relation avec la circulation, dans leur rôle de piétons, de cyclistes et de voyageurs")}}</p>
+                            <p class="white_p">{{__("Développer des comportements et des attitudes responsables, civiques et sécuritaires en relation avec la circulation, dans notre rôle de piétons, de cyclistes et de voyageurs")}}</p>
                         </div>
                     </div>
                     <div class="item">
