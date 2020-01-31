@@ -56,32 +56,32 @@
             <span class="btn-close" id="btn_sideNavClose"><i></i><i></i></span>
             <nav class="side-nav">
                 <ul class="navbar-nav w-100">
-                    <li class="nav-item ">
+                    <li class="nav-item align-text-elem">
                         <a class="nav-link  " href="{{url('/')}}">{{__('Accueil')}}</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item align-text-elem">
                         <a class="nav-link  " href="{{url('a-propos-de-nous')}}">{{__('Le Centre')}}</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item  align-text-elem">
                         <a class="nav-link  " href="{{url('galerie')}}">{{__('Galerie')}}</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item align-text-elem">
                         <a class="nav-link  " href="{{url('faq')}}">{{__('FAQ')}}</a>
                     </li>
 
-                    <li class="nav-item">
+                    <li class="nav-item align-text-elem">
                         <a class="nav-link  " href="{{url('contact-nous')}}">{{__('Contact')}}</a>
                     </li>
                 </ul>
             </nav>
 
             <div class="side-footer w-100">
-                <ul class="social-icons-simple white top40">
+                <ul class="social-icons-simple white top40 align-text-elem">
                     <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i> </a> </li>
                     <li><a href="javascript:void(0)"><i class="fa fa-instagram"></i> </a> </li>
                     <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i> </a> </li>
                 </ul>
-                <p class="whitecolor">© Copyright 2019 - ALSA Tous les droits sont réservés</p>
+                <p class="whitecolor align-text-elem">{{__('© Copyright 2019 - ALSA Tous les droits sont réservés')}}</p>
             </div>
         </div>
     </div>

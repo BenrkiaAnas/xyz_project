@@ -414,7 +414,7 @@
     <section id="logos" class="padding partners">
         <div class="container">
             <h3 class="invisible">hidden</h3>
-            <div class="row">
+            {{--<div class="row">
                 <div class="col-md-12 col-sm-12">
 
                     <div id="partners-slider" class="owl-carousel">
@@ -425,11 +425,33 @@
                             <div class="logo-item"> <img src="{{asset('img/Ministére.png')}}" alt="logo"></div>
                         </div>
                         <div class="item">
-                            <div class="logo-item"><img src="{{asset('img/iniatiative.png')}}" alt="logo"></div>
+                            <div class="logo-item"> <img src="{{asset('img/iniatiative.png')}}" alt="logo"></div>
                         </div>
                         <div class="item">
                             <div class="logo-item"><img src="{{asset('img/comité.png')}}" alt="logo"></div>
                         </div>
+                    </div>
+                </div>
+            </div>--}}
+            <div class="carousel-example">
+                <div>
+                    <div class="box">
+                        <img src="{{asset('img/logo-alsa.png')}}" alt="logo" class="img_size">
+                    </div>
+                </div>
+                <div>
+                    <div class="box">
+                        <img src="{{asset('img/Ministére.png')}}" alt="logo" class="img_size">
+                    </div>
+                </div>
+                <div>
+                    <div class="box">
+                        <img src="{{asset('img/iniatiative.png')}}" alt="logo" class="img_size">
+                    </div>
+                </div>
+                <div>
+                    <div class="box">
+                        <img src="{{asset('img/comité.png')}}" alt="logo" class="img_size">
                     </div>
                 </div>
             </div>
@@ -502,7 +524,23 @@
     <!--Google Map API-->
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAfzJrG8u_tUgBqK5M61cj_-ytj68rJwZA&language=ar"></script>
     <script src="{{asset('js_front/functions.js')}}"></script>
-
+    <script src="{{asset('js_front/index_carousel.min.js')}}"></script>
+    <script>
+        /*$(document).ready(function(){
+            $( "#partners-slider .owl-stage .cloned" ).each(function( index ) {
+                console.log("hana");
+                $(this).remove();
+            });
+        })*/
+        new ElderCarousel('.carousel-example',{
+            items: 4,
+            infinite: true,
+            play: true,
+            playInterval: 3000,
+            speed: 500,
+            navs: false
+        });
+    </script>
     </body>
 
 @endsection

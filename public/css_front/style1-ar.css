@@ -714,3 +714,17 @@ font-family: 'Poppins', sans-serif;
 {
     text-align: initial;
 }
+
+.align-text-elem
+{
+    text-align: right;
+}
+#partners-slider .owl-item
+{
+    width: 300px !important;
+}
+.img_size
+{
+    width: 170px;
+    height: 60px;
+}

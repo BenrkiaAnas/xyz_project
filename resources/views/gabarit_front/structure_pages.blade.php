@@ -22,7 +22,7 @@
         <link rel="stylesheet" href="{{asset('css_front/style1-ar.css')}}">
         
     @endif
-
+    <link rel="stylesheet" href="{{asset('css_front/style_carousel.css')}}"/>
 
 </head>
 

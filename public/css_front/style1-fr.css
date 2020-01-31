@@ -705,3 +705,8 @@ font-family: 'Poppins', sans-serif;
 {
     color: #fff;
 }
+.img_size
+{
+    width: 170px;
+    height: 60px;
+}

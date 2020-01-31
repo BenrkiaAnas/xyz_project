@@ -73,7 +73,8 @@
                     </div>
                     <div class="col-sm-6">
                         <div class="about-edu-bg">
-                            <img src="images/about.png" alt="About">
+                            {{-- <img src="images/about.png" alt="About">--}}
+                              <img src="{{asset("img/Children-Kids.png")}}" alt="About">
                         </div>
 
                     </div>
