@@ -391,8 +391,8 @@
                 </div>
                 <div class="col-md-5 col-sm-5 padding_bottom wow fadeInRight" data-wow-delay="350ms">
                     <div class="image hover-effect">
-                        <img alt="video img" src="{{asset('images/video-click.jpg')}}">
-
+					{{--<img alt="video img" src="{{asset('images/video-click.jpg')}}">--}}
+					<img alt="Savoir Plus" src="{{asset('img/savoir_plus.jpg')}}">
                     </div>
                 </div>
             </div>
